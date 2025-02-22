@@ -18,6 +18,27 @@ const config: Config = {
         "foreground-accent": "var(--foreground-accent)",
         "hero-background": "var(--hero-background)",
       },
+      keyframes: {
+        'slide-down': {
+          '0%': { transform: 'translateY(-0%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' }
+        },
+        scale: {
+          '0%, 100%': { transform: 'scale(.96)' },
+          '50%': { transform: 'scale(1)' }
+        },
+        scaleInOut: {
+          '0%, 100%': { transform: 'scale(.90)' },
+          '50%': { transform: 'scale(1.05)' }
+        }
+      },
+      animation: {
+        'spin-3d': 'spin3d 3s linear infinite',
+        scaleInOut: 'scaleInOut 1.8s infinite',
+        'slide-down': 'slide-down 0.5s ease-out forwards',
+      },
+    },
+    fontFamily: {
     },
   },
   plugins: [],

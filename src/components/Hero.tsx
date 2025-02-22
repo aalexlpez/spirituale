@@ -18,9 +18,10 @@ const Hero: React.FC = () => {
                     objectFit="cover"
                     quality={100}
                     priority={true}
-                    alt="Hero background"
+                    alt="Index background"
                     className="opacity-50"
                 />
+                <div className="absolute inset-0 bg-[#0D0D5599] opacity-50"></div>
             </div>
 
             <div className="absolute left-0 right-0 bottom-0 backdrop-blur-[2px] h-40 bg-gradient-to-b from-transparent via-[rgba(233,238,255,0.5)] to-[rgba(202,208,230,0.5)]">
