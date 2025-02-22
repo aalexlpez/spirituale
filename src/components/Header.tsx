@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-import { FaFingerprint } from 'react-icons/fa';
+import Image from 'next/image';
 
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
@@ -23,8 +23,8 @@ const Header: React.FC = () => {
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="text-foreground min-w-fit w-7 h-7" />
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
+                        <Image src={"/images/logo.jpg"} alt="Site Logo" width={100} height={100} className="min-w-fit w-8 h-8 md:w-10 md:h-10 rounded-full" />
+                        <span className="manrope text-xl font-semibold text-[#0D0D55] cursor-pointer">
                             {siteDetails.siteName}
                         </span>
                     </Link>
@@ -33,14 +33,14 @@ const Header: React.FC = () => {
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
+                                <Link href={item.url} className="text-[#0D0D55] transition-colors duration-300 hover:bg-[#D9F103] hover:text-black px-8 py-3 rounded-full">
                                     {item.text}
                                 </Link>
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Download
+                            <Link href="#cta" className="text-black bg-[#D9F103] px-8 py-3 rounded-full transition-colors duration-300 hover:bg-[#0D0D55] hover:text-[#D9F103]">
+                                ¡Únete Ya!
                             </Link>
                         </li>
                     </ul>

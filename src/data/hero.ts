@@ -1,5 +1,5 @@
 export const heroDetails = {
-    heading: 'Smart, Secure, Simple Financial Management',
-    subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
+    heading: 'Manifiesta, Transforma, Atrae. Despierta tu Poder',
+    subheading: 'Únete a esta presentación gratuita y descubre cómo activar tu poder interior para atraer abundancia, amor y bienestar. ¡El universo está listo para escucharte! ',
     centerImageSrc: '/images/hero-mockup.webp',
 }
