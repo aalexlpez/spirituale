@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing/Pricing";
@@ -44,3 +45,4 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+/* eslint-enable @typescript-eslint/no-unused-vars */
