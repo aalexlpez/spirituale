@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ctaDetails } from '@/data/cta'
 
-const JoinButton = ({ dark }: { dark?: boolean }) => {
+const JoinButton = () => {
     return (
         <Link href={ctaDetails.googlePlayUrl}>
             <button
