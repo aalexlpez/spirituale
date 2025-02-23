@@ -7,23 +7,23 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
+    subheading: "",
     quickLinks: [
         {
-            text: "Features",
-            url: "#features"
+            text: "Características",
+            url: "#características"
         },
         {
-            text: "Pricing",
-            url: "#pricing"
+            text: "WhatsApp",
+            url: "#whatsapp"
         },
         {
-            text: "Testimonials",
-            url: "#testimonials"
+            text: "Testimonios",
+            url: "#testimonios"
         }
     ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    email: 'spirituale@gmail.com',
+    telephone: '+58 (414) 4244242',
     socials: {
         // github: 'https://github.com',
         // x: 'https://twitter.com/x',

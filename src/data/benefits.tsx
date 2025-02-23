@@ -1,72 +1,79 @@
 import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
+import { TbDeviceVisionPro } from "react-icons/tb";
 
 import { IBenefit } from "@/types"
+import { TfiSignal } from "react-icons/tfi";
+import { LuGoal } from "react-icons/lu";
+import { SiPrivatedivision } from "react-icons/si";
+import { GiArrowsShield, GiEmbrassedEnergy, GiFootsteps } from "react-icons/gi";
+import { GrGrow } from "react-icons/gr";
+import { CiLight } from "react-icons/ci";
 
 export const benefits: IBenefit[] = [
     {
-        title: "Smart Budgeting",
-        description: "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
+        title: "Crecimiento Espiritual Inteligente",
+        description: "El camino hacia la plenitud interior no tiene por qué ser incierto. Nuestra plataforma se adapta a tu viaje espiritual y te guía con claridad y propósito.",
         bullets: [
             {
-                title: "Intelligent Categorization",
-                description: "Automatically sorts your transactions for crystal-clear insights.",
-                icon: <FiBarChart2 size={26} />
+                title: "Conexión Auténtica",
+                description: "Clasificamos y organizamos tus experiencias y aprendizajes espirituales para que puedas ver tu progreso con claridad.",
+                icon: <TfiSignal size={38} />
             },
             {
-                title: "Customizable Goals",
-                description: "Set and track financial objectives that matter to you.",
-                icon: <FiTarget size={26} />
+                title: "Metas Personalizadas",
+                description: "Define y sigue objetivos espirituales alineados con tu propósito de vida.",
+                icon: <LuGoal size={38} />
             },
             {
-                title: "Predictive Analysis",
-                description: "Get ahead of your finances with spending forecasts and alerts.",
-                icon: <FiTrendingUp size={26} />
+                title: "Visión Profunda",
+                description: "Anticípate a los desafíos en tu crecimiento interior con reflexiones y recordatorios significativos.",
+                icon: <TbDeviceVisionPro size={38} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/images/gray_1530x3036.png"
     },
     {
-        title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. Spirituale makes investing accessible and straightforward.",
+        title: "Transformación Sin Esfuerzo",
+        description: "Eleva tu ser sin complicaciones. Spirituale hace que el despertar espiritual sea accesible y enriquecedor.",
         bullets: [
             {
-                title: "Micro-Investing",
-                description: "Begin with as little as $1 and watch your money grow.",
-                icon: <FiDollarSign size={26} />
+                title: "Pequeños Pasos, Grandes Cambios",
+                description: "Inicia con prácticas simples y observa cómo tu conciencia se expande.",
+                icon: <GiFootsteps size={38} />
             },
             {
-                title: "Expert Portfolios",
-                description: "Choose from investment strategies tailored to your risk tolerance.",
-                icon: <FiBriefcase size={26} />
+                title: "Guía Iluminada",
+                description: "Explora caminos espirituales adaptados a tu esencia y nivel de evolución.",
+                icon: <CiLight size={38} /> 
             },
             {
-                title: "Real-Time Performance",
-                description: "Track your investments with easy-to-understand metrics and visuals.",
-                icon: <FiPieChart size={26} />
+                title: "Evolución en Tiempo Real",
+                description: "Mide tu bienestar espiritual con herramientas intuitivas y visuales que reflejan tu crecimiento.",
+                icon: <GrGrow size={38} />
             }
         ],
-        imageSrc: "/images/mockup-2.webp"
+        imageSrc: "/images/gray_1530x3036.png"
     },
     {
-        title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Spirituale employs cutting-edge security measures.",
+        title: "Protección y Armonía Interior",
+        description: "Tu energía y bienestar merecen el mayor cuidado. Spirituale te brinda un espacio seguro para explorar tu espiritualidad.",
         bullets: [
             {
-                title: "Military-Grade Encryption",
-                description: "Your information is safeguarded with the highest level of encryption.",
-                icon: <FiLock size={26} />
+                title: "Energía Resguardada",
+                description: "Prácticas y enseñanzas protegidas con la más alta vibración y autenticidad.",
+                icon: <GiEmbrassedEnergy size={38} />
             },
             {
-                title: "Biometric Authentication",
-                description: "Access your account securely with fingerprint or facial recognition.",
-                icon: <FiUser size={26} />
+                title: "Acceso Sagrado",
+                description: "Conexión segura y personalizada con tu espacio de crecimiento espiritual.",
+                icon: <SiPrivatedivision size={38} />
             },
             {
-                title: "Real-Time Fraud Detection",
-                description: "Our system constantly monitors for suspicious activity to keep your money safe.",
-                icon: <FiShield size={26} />
+                title: "Guardián de Tu Paz",
+                description: "Monitoreamos tu evolución para asegurarnos de que tu camino sea auténtico y libre de interferencias negativas.",
+                icon: <GiArrowsShield size={38} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
-    },
+        imageSrc: "/images/gray_1530x3036.png"
+    }
 ]

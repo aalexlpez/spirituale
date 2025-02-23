@@ -9,37 +9,41 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
+import FormCaptureData from "@/components/FormCaptureData";
 
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      {/* <Logos />
+
+      <Logos />
       <Container>
         <Benefits />
 
-        <Section
+        {/* <Section
           id="pricing"
           title="Pricing"
           description="Simple, transparent pricing. No surprises."
         >
           <Pricing />
-        </Section>
-
-        <Section
-          id="testimonials"
-          title="What Our Clients Say"
-          description="Hear from those who have partnered with us."
-        >
-          <Testimonials />
-        </Section>
-
-        <FAQ />
-
-        <Stats />
+        </Section> */}
         
-        <CTA />
-      </Container> */}
+        <div className="bg-themeNavy ">
+          <Section
+            id="testimonios"
+            title="Lo que dicen nuestros clientes"
+            description="Escuche a quienes se han asociado con nosotros."
+          >
+            <Testimonials />
+          </Section>
+        </div>
+
+        {/* <FAQ /> */}
+
+        {/* <Stats />
+
+        <CTA /> */}
+      </Container>
     </>
   );
 };

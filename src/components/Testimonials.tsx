@@ -4,26 +4,26 @@ import { testimonials } from '@/data/testimonials';
 
 const Testimonials: React.FC = () => {
     return (
-        <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
+        <div className="grid gap-14 max-w-xs w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-7xl px-0 lg:px-4 xl:px-0">
             {testimonials.map((testimonial, index) => (
                 <div
                     key={index}
-                    className=""
+                    className="bg-themeLilac p-4 md:p-8 rounded-2xl  shadow-2xl hover:scale-105 transition-transform duration-300"
                 >
-                    <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
+                    <div className="flex items-center mb-4 w-full justify-center lg:justify-start ">
                         <Image
                             src={testimonial.avatar}
                             alt={`${testimonial.name} avatar`}
                             width={50}
                             height={50}
-                            className="rounded-full shadow-md"
+                            className="rounded-full shadow-md h-20 w-20 "
                         />
                         <div className="ml-4">
-                            <h3 className="text-lg font-semibold text-secondary">{testimonial.name}</h3>
-                            <p className="text-sm text-foreground-accent">{testimonial.role}</p>
+                            <h3 className="text-lg font-semibold text-secondary text-themeNavy">{testimonial.name}</h3>
+                            <p className="text-[14px] md:text-sm text-foreground-accent text-themeNavy">{testimonial.role}</p>
                         </div>
                     </div>
-                    <p className="text-foreground-accent text-center lg:text-left">&quot;{testimonial.message}&quot;</p>
+                    <p className="text-foreground-accent text-justify text-[14px] md:text-sm  lg:text-left text-themeNavy">&quot;{testimonial.message}&quot;</p>
                 </div>
             ))}
         </div>
