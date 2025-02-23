@@ -10,9 +10,9 @@ const Section: React.FC<React.PropsWithChildren<Props>> = ({ id, title, descript
     return (
         <section id={id} className="py-10 lg:py-20 ">
             <SectionTitle>
-                <h2 className="text-center mb-4 text-themeLilac">{title}</h2>
+                <h2 className="text-center mb-4 text-themeNavy">{title}</h2>
             </SectionTitle>
-            <p className="mb-12 text-center text-themeLilac">{description}</p>
+            <p className="mb-12 text-center text-themeNavy">{description}</p>
             {children}
         </section>
     )

@@ -50,16 +50,16 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
     const { title, description, imageSrc, bullets } = benefit;
 
     return (
-        <section className="benefit-section px-4">
+        <section className="benefit-section">
             <motion.div
-                className="flex flex-wrap flex-col items-stretch justify-center gap-2 lg:flex-row lg:gap-20 lg:flex-nowrap mb-24 "
+                className={clsx("flex flex-wrap flex-col items-stretch justify-center  lg:flex-row  lg:flex-nowrap py-20 ", { "bg-themeLilac text-themeNavy": imageAtRight, "bg-themeNavy text-themeLilac": !imageAtRight })}
                 variants={containerVariants}
                 initial="offscreen"
                 whileInView="onscreen"
                 viewport={{ once: true }}
             >
                 <div
-                    className={clsx("flex flex-wrap items-center w-full max-w-lg bg-themeLilac shadow-2xl px-4 md:px-10 py-10 md:py-0 rounded-3xl min-h-full", { "justify-start": imageAtRight, "lg:order-1 justify-end": !imageAtRight })}
+                    className={clsx("flex flex-wrap items-center w-full max-w-3xl  px-4 md:px-10 py-10 md:py-0 rounded-3xl min-h-full ", { "justify-start text-themeNavy": imageAtRight, "lg:order-1 justify-end text-themeLilac": !imageAtRight })}
                 >
                     <div className="w-full  text-center lg:text-left ">
                         <motion.div
@@ -67,19 +67,19 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                             variants={childVariants}
                         >
                             <SectionTitle>
-                                <h3 className="lg:max-w-2xl bg-gradient-to-r from-themeNavy to-themePink bg-clip-text text-transparent textShadow">
+                                <h3 className={clsx("lg:max-w-2xl bg-gradient-to-r bg-clip-text text-transparent", { " from-themeNavy to-themePink": imageAtRight, " from-themeLilac to-themePink": !imageAtRight })}>
                                     {title}
                                 </h3>
                             </SectionTitle>
 
-                            <p className="mt-1.5 mx-auto lg:ml-0 leading-normal ">
+                            <p className={clsx("mt-1.5 mx-auto lg:ml-0 leading-normal ", { "text-themeNavy": imageAtRight, "text-themeLilac": !imageAtRight })}>
                                 {description}
                             </p>
                         </motion.div>
 
                         <div className="mx-auto lg:ml-0 w-full ">
                             {bullets.map((item, index) => (
-                                <BenefitBullet key={index} title={item.title} icon={item.icon} description={item.description} />
+                                <BenefitBullet key={index} title={item.title} icon={item.icon} description={item.description} imageAtRight={imageAtRight} />
                             ))}
                         </div>
                     </div>

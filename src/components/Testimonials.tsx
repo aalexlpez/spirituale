@@ -8,7 +8,7 @@ const Testimonials: React.FC = () => {
             {testimonials.map((testimonial, index) => (
                 <div
                     key={index}
-                    className="bg-themeLilac p-4 md:p-8 rounded-2xl  shadow-2xl hover:scale-105 transition-transform duration-300"
+                    className="bg-themeNavy p-4 md:p-8 rounded-2xl  shadow-2xl hover:scale-105 transition-transform duration-300"
                 >
                     <div className="flex items-center mb-4 w-full justify-center lg:justify-start ">
                         <Image
@@ -19,11 +19,11 @@ const Testimonials: React.FC = () => {
                             className="rounded-full shadow-md h-20 w-20 "
                         />
                         <div className="ml-4">
-                            <h3 className="text-lg font-semibold text-secondary text-themeNavy">{testimonial.name}</h3>
-                            <p className="text-[14px] md:text-sm text-foreground-accent text-themeNavy">{testimonial.role}</p>
+                            <h3 className="text-lg font-semibold text-secondary text-themeLilac">{testimonial.name}</h3>
+                            <p className="text-[14px] md:text-sm text-foreground-accent text-themeLilac">{testimonial.role}</p>
                         </div>
                     </div>
-                    <p className="text-foreground-accent text-justify text-[14px] md:text-sm  lg:text-left text-themeNavy">&quot;{testimonial.message}&quot;</p>
+                    <p className="text-foreground-accent text-justify text-[14px] md:text-sm  lg:text-left text-themeLilac">&quot;{testimonial.message}&quot;</p>
                 </div>
             ))}
         </div>

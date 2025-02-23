@@ -16,9 +16,9 @@ const HomePage: React.FC = () => {
     <>
       <Hero />
 
-      <Logos />
-      <Container>
+      {/* <Logos /> */}
         <Benefits />
+      <Container>
 
         {/* <Section
           id="pricing"
@@ -27,8 +27,8 @@ const HomePage: React.FC = () => {
         >
           <Pricing />
         </Section> */}
-        
-        <div className="bg-themeNavy ">
+
+        <div className="bg-themeLilac ">
           <Section
             id="testimonios"
             title="Lo que dicen nuestros clientes"
