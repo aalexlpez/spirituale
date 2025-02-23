@@ -1,21 +1,27 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
-// import { menuItems } from '@/data/menuItems';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrollY, setScrollY] = useState(0);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
@@ -31,24 +37,22 @@ const Header: React.FC = () => {
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex space-x-6">
-                        {/* {menuItems.map(item => (
-                            <li key={item.text}>
-                                <Link href={item.url} className="font-semibold text-themeNavy transition-colors duration-300 hover:bg-themeNeon hover:text-themeNavy p-1 md:px-2 md:py-2 lg:px-8 lg:py-3  rounded-full">
-                                    {item.text}
-                                </Link>
-                            </li>
-                        ))} */}
                         <li>
-                            <Link href="#cta" className="font-bold text-themeNavy bg-themeNeon px-8 py-3 rounded-full transition-colors duration-300 hover:bg-themeNavy hover:text-themeNeon">
-                                ¡Únete Ya!
-                            </Link>
+                            <motion.div
+                                animate={{ y: scrollY * 1 }}
+                                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                            >
+                                <Link href="#cta" className="font-bold text-themeNavy bg-themeNeon px-8 py-3 rounded-full transition-colors duration-300 hover:bg-themeNavy hover:text-themeNeon">
+                                    ¡Únete Ya!
+                                </Link>
+                            </motion.div>
                         </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center">
                         <button
-                            onClick={toggleMenu}
+                            onClick={() => setIsOpen(!isOpen)}
                             type="button"
                             className="bg-themeNeon text-themeNavy focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
                             aria-controls="mobile-menu"
@@ -77,15 +81,8 @@ const Header: React.FC = () => {
             >
                 <div id="mobile-menu" className="md:hidden bg-white shadow-lg">
                     <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
-                        {/* {menuItems.map(item => (
-                            <li key={item.text}>
-                                <Link href={item.url} className="text-themeNavy p-2 rounded-full hover:bg-themeNeon hover:text-themeNavy block" onClick={toggleMenu}>
-                                    {item.text}
-                                </Link>
-                            </li>
-                        ))} */}
                         <li>
-                            <Link href="#cta" className="font-bold text-themeNavy bg-themeNeon px-8 py-3 rounded-full transition-colors duration-300 hover:bg-themeNavy hover:text-themeNeon" onClick={toggleMenu}>
+                            <Link href="#cta" className="font-bold text-themeNavy bg-themeNeon px-8 py-3 rounded-full transition-colors duration-300 hover:bg-themeNavy hover:text-themeNeon" onClick={() => setIsOpen(false)}>
                                 ¡Únete Ya!
                             </Link>
                         </li>
