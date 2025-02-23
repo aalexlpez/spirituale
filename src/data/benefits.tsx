@@ -1,4 +1,3 @@
-import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
 import { TbDeviceVisionPro } from "react-icons/tb";
 
 import { IBenefit } from "@/types"
