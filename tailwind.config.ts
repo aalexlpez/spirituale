@@ -13,7 +13,7 @@ const config: Config = {
         themeNavy: '#0D0D55',
         themeNeon: '#D9F103',
         themeLilac: '#D2C7FF',
-        
+
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         primary: 'var(--primary)',
@@ -40,6 +40,9 @@ const config: Config = {
         'spin-3d': 'spin3d 3s linear infinite',
         scaleInOut: 'scaleInOut 1.8s infinite',
         'slide-down': 'slide-down 0.5s ease-out forwards'
+      },
+      textShadow: {
+        lg: '0 2px 4px rgba(0, 0, 0, 0.1)'
       }
     },
     fontFamily: {}

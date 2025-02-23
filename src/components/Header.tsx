@@ -31,13 +31,13 @@ const Header: React.FC = () => {
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex space-x-6">
-                        {menuItems.map(item => (
+                        {/* {menuItems.map(item => (
                             <li key={item.text}>
                                 <Link href={item.url} className="font-semibold text-themeNavy transition-colors duration-300 hover:bg-themeNeon hover:text-themeNavy p-1 md:px-2 md:py-2 lg:px-8 lg:py-3  rounded-full">
                                     {item.text}
                                 </Link>
                             </li>
-                        ))}
+                        ))} */}
                         <li>
                             <Link href="#cta" className="font-bold text-themeNavy bg-themeNeon px-8 py-3 rounded-full transition-colors duration-300 hover:bg-themeNavy hover:text-themeNeon">
                                 ¡Únete Ya!
@@ -77,13 +77,13 @@ const Header: React.FC = () => {
             >
                 <div id="mobile-menu" className="md:hidden bg-white shadow-lg">
                     <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
-                        {menuItems.map(item => (
+                        {/* {menuItems.map(item => (
                             <li key={item.text}>
                                 <Link href={item.url} className="text-themeNavy p-2 rounded-full hover:bg-themeNeon hover:text-themeNavy block" onClick={toggleMenu}>
                                     {item.text}
                                 </Link>
                             </li>
-                        ))}
+                        ))} */}
                         <li>
                             <Link href="#cta" className="font-bold text-themeNavy bg-themeNeon px-8 py-3 rounded-full transition-colors duration-300 hover:bg-themeNavy hover:text-themeNeon" onClick={toggleMenu}>
                                 ¡Únete Ya!

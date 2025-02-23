@@ -50,17 +50,16 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
     const { title, description, imageSrc, bullets } = benefit;
 
     return (
-        <section className="benefit-section">
+        <section className="benefit-section px-4">
             <motion.div
-                className="flex flex-wrap flex-col items-center justify-center gap-2 lg:flex-row lg:gap-20 lg:flex-nowrap mb-24"
+                className="flex flex-wrap flex-col items-stretch justify-center gap-2 lg:flex-row lg:gap-20 lg:flex-nowrap mb-24 "
                 variants={containerVariants}
                 initial="offscreen"
                 whileInView="onscreen"
                 viewport={{ once: true }}
             >
                 <div
-                    className={clsx("flex flex-wrap items-center w-full max-w-lg", { "justify-start": imageAtRight, "lg:order-1 justify-end": !imageAtRight })}
-
+                    className={clsx("flex flex-wrap items-center w-full max-w-lg bg-themeLilac shadow-2xl px-4 md:px-10 py-10 md:py-0 rounded-3xl min-h-full", { "justify-start": imageAtRight, "lg:order-1 justify-end": !imageAtRight })}
                 >
                     <div className="w-full  text-center lg:text-left ">
                         <motion.div
@@ -68,7 +67,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                             variants={childVariants}
                         >
                             <SectionTitle>
-                                <h3 className="lg:max-w-2xl text-themeNavy">
+                                <h3 className="lg:max-w-2xl bg-gradient-to-r from-themeNavy to-themePink bg-clip-text text-transparent textShadow">
                                     {title}
                                 </h3>
                             </SectionTitle>
@@ -88,7 +87,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
 
                 <div className={clsx("mt-5 lg:mt-0", { "lg:order-2": imageAtRight })}>
                     <div className={clsx("w-fit flex", { "justify-start": imageAtRight, "justify-end": !imageAtRight })}>
-                        <Image src={imageSrc} alt="title" width="384" height="762" quality={100} className="lg:ml-0 rounded-xl" />
+                        <Image src={imageSrc} alt="title" width="384" height="762" quality={100} className="lg:ml-0 rounded-xl shadow-2xl" />
                         {/* <FormCaptureData /> */}
                     </div>
                 </div>
