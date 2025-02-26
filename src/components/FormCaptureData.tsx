@@ -1,10 +1,5 @@
 "use client"
 
-interface SpiritualFormProps {
-  isOpen: boolean;
-  onClose: (value: boolean) => void;
-}
-
 export default function SpiritualForm() {
   
  

@@ -16,7 +16,7 @@ const Header: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);
     const [prevScrollY, setPrevScrollY] = useState(0);
     const [visible, setVisible] = useState(true);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading] = useState(false);
     const [showJoinModal, setShowJoinModal] = useState(false)
 
     const handleP2PValidation = async () => {
