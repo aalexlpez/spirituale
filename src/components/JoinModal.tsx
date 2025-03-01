@@ -183,7 +183,7 @@ export default function JoinModal({
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p className='font-text'>Estarás en la clase gratuita "3 Pasos para Revelar tu Abundancia Consciente".</p>
+                <p className='font-text'>Estarás en la clase gratuita "3 Pasos para Revelar tu Abundancia Consciente.</p>
               </li>
               <li className="flex items-center">
                 <svg
