@@ -125,9 +125,9 @@ export default function JoinModal({
             </svg>
           </div>
           <h2 className="text-xl md:text-3xl font-bold text-themeNavy mb-2 font-text">
-            ¡Empieza a crear tu realidad perfecta ahora!
+            {"¡Empieza a crear tu realidad perfecta ahora!"}
           </h2>
-          <p className={"text-themeNavy/80 text-base md:text-lg font-text"}>Conecta con tu magia creadora, esta es una senal.</p>
+          <p className={"text-themeNavy/80 text-base md:text-lg font-text"}>{"Conecta con tu magia creadora, esta es una señal."}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -183,7 +183,7 @@ export default function JoinModal({
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p className='font-text'>Estarás en la clase gratuita "3 Pasos para Revelar tu Abundancia Consciente.</p>
+                <p className='font-text'>{"Estarás en la clase gratuita \"3 Pasos para Revelar tu Abundancia Consciente\"".}</p>
               </li>
               <li className="flex items-center">
                 <svg
