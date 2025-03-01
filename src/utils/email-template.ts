@@ -96,7 +96,7 @@ a[x-apple-data-detectors],
                   <td valign="top" align="center" class="es-m-p0r" style="padding:0;Margin:0;width:600px">
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                      <tr>
-                      <td align="center" class="es-m-txt-c" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="https://viewstripo.email" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:14px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/img_4435.JPG" alt="" title="Logo" width="120" class="adapt-img" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none;border-radius:200px"></a></td>
+                      <td align="center" class="es-m-txt-c" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:14px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/img_4435.JPG" alt="" title="Logo" width="120" class="adapt-img" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none;border-radius:200px"></a></td>
                      </tr>
                    </table></td>
                  </tr>
@@ -174,7 +174,7 @@ a[x-apple-data-detectors],
                   <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                      <tr>
-                      <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="https://viewstripo.email" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_6306d45fd9ea3b681ebe3a603101f0275312c7c136d6957f7ed43fa4b22490f7/images/discussion.png" alt="" width="90" class="b_image" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
+                      <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_6306d45fd9ea3b681ebe3a603101f0275312c7c136d6957f7ed43fa4b22490f7/images/discussion.png" alt="" width="90" class="b_image" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
                      </tr>
                    </table></td>
                  </tr>
@@ -210,7 +210,7 @@ a[x-apple-data-detectors],
                   <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                      <tr>
-                      <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="https://viewstripo.email" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_6306d45fd9ea3b681ebe3a603101f0275312c7c136d6957f7ed43fa4b22490f7/images/videoplayer.png" alt="" width="90" class="b_image" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
+                      <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_6306d45fd9ea3b681ebe3a603101f0275312c7c136d6957f7ed43fa4b22490f7/images/videoplayer.png" alt="" width="90" class="b_image" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
                      </tr>
                    </table></td>
                  </tr>
@@ -246,7 +246,7 @@ a[x-apple-data-detectors],
                   <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                      <tr>
-                      <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="https://viewstripo.email" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_6306d45fd9ea3b681ebe3a603101f0275312c7c136d6957f7ed43fa4b22490f7/images/help.png" alt="" width="90" class="b_image" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
+                      <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_6306d45fd9ea3b681ebe3a603101f0275312c7c136d6957f7ed43fa4b22490f7/images/help.png" alt="" width="90" class="b_image" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
                      </tr>
                    </table></td>
                  </tr>
@@ -290,10 +290,7 @@ a[x-apple-data-detectors],
                       <td align="center" class="es-m-txt-c" style="padding:0;Margin:0;padding-bottom:20px;padding-top:10px;font-size:0">
                        <table cellpadding="0" cellspacing="0" class="es-table-not-adapt es-social" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                          <tr>
-                          <td align="center" valign="top" style="padding:0;Margin:0;padding-right:10px"><a target="_blank" href="https://viewstripo.email" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img title="Facebook" src="https://fuhukcl.stripocdn.email/content/assets/img/social-icons/logo-colored/facebook-logo-colored.png" alt="Fb" height="24" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
-                          <td align="center" valign="top" style="padding:0;Margin:0;padding-right:10px"><a target="_blank" href="https://viewstripo.email" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img title="Instagram" src="https://fuhukcl.stripocdn.email/content/assets/img/social-icons/logo-colored/instagram-logo-colored.png" alt="Inst" height="24" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
-                          <td align="center" valign="top" style="padding:0;Margin:0;padding-right:10px"><a target="_blank" href="https://viewstripo.email" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img title="Linkedin" src="https://fuhukcl.stripocdn.email/content/assets/img/social-icons/logo-colored/linkedin-logo-colored.png" alt="In" height="24" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
-                          <td align="center" valign="top" style="padding:0;Margin:0"><a target="_blank" href="https://viewstripo.email" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img title="Youtube" src="https://fuhukcl.stripocdn.email/content/assets/img/social-icons/logo-colored/youtube-logo-colored.png" alt="Yt" height="24" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
+                          <td align="center" valign="top" style="padding:0;Margin:0;padding-right:10px"><a target="_blank" href="https://instagram.com/spiritu.alee" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img title="Instagram" src="https://fuhukcl.stripocdn.email/content/assets/img/social-icons/logo-colored/instagram-logo-colored.png" alt="Inst" height="24" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
                          </tr>
                        </table></td>
                      </tr>
@@ -323,7 +320,7 @@ a[x-apple-data-detectors],
                   <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                      <tr>
-                      <td align="center" style="padding:0;Margin:0"><p style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:21px;letter-spacing:0;color:#E2CFEA;font-size:14px">If you prefer not to receive these emails, you can&nbsp;<a href="https://viewstripo.email" target="_blank" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:14px">unsubscribe</a>.<br>Copyright © 2023&nbsp;Company&nbsp;</p></td>
+                      <td align="center" style="padding:0;Margin:0"><p style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:21px;letter-spacing:0;color:#E2CFEA;font-size:14px">If you prefer not to receive these emails, you can&nbsp;<a href="" target="_blank" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:14px">unsubscribe</a>.<br>Copyright © 2023&nbsp;Company&nbsp;</p></td>
                      </tr>
                    </table></td>
                  </tr>

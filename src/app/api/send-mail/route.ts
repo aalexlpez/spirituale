@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const emailTemplate = template(name)
 
     await resend.emails.send({
-      from: 'ale@spiritualelife.com',
+      from: 'Spirituale <spirituale@spiritualelife.com>',
       to: email,
       subject: 'Bienvenido a Tu Viaje Espiritual',
       html: emailTemplate
