@@ -17,7 +17,6 @@ export const childVariants = {
 }
 
 const BenefitBullet: React.FC<IBenefitBullet & { imageAtRight?: boolean }> = ({
-  title,
   description,
   icon,
   imageAtRight,

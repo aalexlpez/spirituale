@@ -128,7 +128,7 @@ export default function JoinModal({
             ¡Empieza a crear tu realidad perfecta ahora!
           </h2>
           <p className="text-themeNavy/80 text-base md:text-lg font-text">
-            Conecta con tu magia creadora, esta es una señal.
+            Conecta con tu magia creadora, esta es una se&ntilde;al.
           </p>
         </div>
 

@@ -1,12 +1,6 @@
 import { TbDeviceVisionPro } from "react-icons/tb";
 
 import { IBenefit } from "@/types"
-import { TfiSignal } from "react-icons/tfi";
-import { LuGoal } from "react-icons/lu";
-import { SiPrivatedivision } from "react-icons/si";
-import { GiArrowsShield, GiEmbrassedEnergy, GiFootsteps } from "react-icons/gi";
-import { GrGrow } from "react-icons/gr";
-import { CiLight } from "react-icons/ci";
 
 export const benefits: IBenefit[] = [
     {

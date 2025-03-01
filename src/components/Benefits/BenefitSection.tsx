@@ -4,7 +4,6 @@ import clsx from "clsx";
 import { motion, Variants } from "framer-motion"
 
 import BenefitBullet from "./BenefitBullet";
-import SectionTitle from "../SectionTitle";
 import { IBenefit } from "@/types";
 
 
