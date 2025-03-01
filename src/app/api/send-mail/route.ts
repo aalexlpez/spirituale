@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   console.log(name, email, message)
 
   try {
-    const emailTemplate = template(name, message)
+    const emailTemplate = template(name)
 
     await resend.emails.send({
       from: 'onboarding@resend.dev',
