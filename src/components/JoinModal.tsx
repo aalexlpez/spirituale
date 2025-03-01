@@ -127,9 +127,7 @@ export default function JoinModal({
           <h2 className="text-xl md:text-3xl font-bold text-themeNavy mb-2 font-text">
             ¡Empieza a crear tu realidad perfecta ahora!
           </h2>
-          <p className="text-themeNavy/80 text-base md:text-lg font-text">
-            Conecta con tu magia creadora, esta es una se&ntilde;al.
-          </p>
+          <p className={"text-themeNavy/80 text-base md:text-lg font-text"}>Conecta con tu magia creadora, esta es una se&ntilde;al.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">

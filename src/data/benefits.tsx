@@ -1,5 +1,3 @@
-import { TbDeviceVisionPro } from "react-icons/tb";
-
 import { IBenefit } from "@/types"
 
 export const benefits: IBenefit[] = [
