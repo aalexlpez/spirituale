@@ -60,34 +60,43 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                 viewport={{ once: true }}
             >
                 <div
-                    className={clsx("flex flex-wrap items-center w-full max-w-3xl  px-4 md:px-10 py-10 md:py-0 rounded-3xl min-h-full ", { "justify-start text-themeNavy": imageAtRight, "lg:order-1 justify-end text-themeLilac": !imageAtRight })}
+                    className={clsx("flex flex-wrap items-center w-full lg:max-w-3xl justify-center px-4 md:px-10 py-10 md:py-0 rounded-3xl min-h-full ", { "justify-center w-full text-themeNavy": imageAtRight, "lg:order-1 justify-end text-themeLilac": !imageAtRight })}
                 >
-                    <div className="w-full  text-center lg:text-left ">
+                    <div className="w-full text-center lg:text-left ">
                         <motion.div
-                            className="flex flex-col w-full text-themeNavy"
+                            className="flex flex-col w-full text-themeNavy justify-center"
                             variants={childVariants}
                         >
-                            <SectionTitle>
-                                <h3 className={clsx("lg:max-w-2xl bg-gradient-to-r bg-clip-text text-transparent", { " from-themeNavy to-themePink": imageAtRight, " from-themeLilac to-themePink": !imageAtRight })}>
-                                    {title}
+                            <h3 className={clsx("lg:max-w-2xl bg-gradient-to-r bg-clip-text text-transparent mb-4 font-title text-4xl lg:text-7xl lg:leading-tight font-bold", { " from-themeNavy to-themePink": imageAtRight, " from-themeLilac to-themePink": !imageAtRight })}>
+                                {title.line1}
+                            </h3>
+                            {title.line2 &&
+                                <h3 className={clsx("lg:max-w-2xl bg-gradient-to-r bg-clip-text text-transparent mb-4 font-title text-4xl lg:text-7xl lg:leading-tight font-bold", { " from-themeNavy to-themePink": imageAtRight, " from-themeLilac to-themePink": !imageAtRight })}>
+                                    {title.line2}
                                 </h3>
-                            </SectionTitle>
+                            }
 
                             <p className={clsx("mt-1.5 mx-auto lg:ml-0 leading-normal ", { "text-themeNavy": imageAtRight, "text-themeLilac": !imageAtRight })}>
                                 {description}
                             </p>
                         </motion.div>
 
-                        <div className="mx-auto lg:ml-0 w-full ">
-                            {bullets.map((item, index) => (
-                                <BenefitBullet key={index} title={item.title} icon={item.icon} description={item.description} imageAtRight={imageAtRight} />
-                            ))}
-                        </div>
+                        <motion.div
+                            className="flex flex-col w-full text-themeNavy justify-center"
+                            variants={childVariants}
+                        >
+                            <div className="mx-auto lg:ml-0 w-full font-text">
+                                {bullets.map((item, index) => (
+                                    <BenefitBullet key={index} title={item.title} icon={item.icon} description={item.description} imageAtRight={imageAtRight} />
+                                ))}
+                            </div>
+                        </motion.div>
+
                     </div>
                 </div>
 
                 <div className={clsx("mt-5 lg:mt-0", { "lg:order-2": imageAtRight })}>
-                    <div className={clsx("w-fit flex", { "justify-start": imageAtRight, "justify-end": !imageAtRight })}>
+                    <div className={clsx("w-full flex", { "justify-center lg:justify-start": imageAtRight, "justify-center lg:justify-end": !imageAtRight })}>
                         <Image src={imageSrc} alt="title" width="384" height="762" quality={100} className="lg:ml-0 rounded-xl shadow-2xl" />
                     </div>
                 </div>

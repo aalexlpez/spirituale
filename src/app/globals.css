@@ -17,12 +17,25 @@ html {
   @apply scroll-smooth;
 }
 
+@font-face {
+  font-family: 'CuerpoFont';
+  src: url('/fonts/Gontserrat-Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TituloFont';
+  src: url('/fonts/NostalgicRemain-Regular.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   @apply text-lg;
-  
+  font-family: 'CuerpoFont', sans-serif;
   color: var(--foreground);
   background: var(--background);
-  font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -31,6 +44,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.grid {
+  grid-auto-rows: minmax(min-content, max-content);
 }
 
 .manrope {

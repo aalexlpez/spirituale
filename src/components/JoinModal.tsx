@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from 'next/navigation'
 import type React from "react";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
@@ -11,6 +12,9 @@ export default function JoinModal({
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
 }) {
+
+  const router = useRouter();
+
   const [mounted, setMounted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -56,6 +60,9 @@ export default function JoinModal({
     } finally {
       setIsLoading(false);
       setIsOpen(false);
+      setTimeout(() => {
+        router.push("/thanks");
+      }, 500);
     }
   };
 
@@ -63,9 +70,8 @@ export default function JoinModal({
 
   return createPortal(
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center ${
-        isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-      } transition-opacity duration-300`}
+      className={`fixed inset-0 z-50 flex items-center justify-center ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        } transition-opacity duration-300`}
     >
       <div
         className="absolute inset-0 bg-themeNavy/30 backdrop-blur-sm"
@@ -105,7 +111,7 @@ export default function JoinModal({
         <div className="text-center mb-6">
           <div className="flex justify-center mb-4">
             <svg
-              className="w-8 h-8 sm:w-12 sm:h-12 text-themePink"
+              className="w-10 h-10 sm:w-14 sm:h-14 text-themePink"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -118,11 +124,11 @@ export default function JoinModal({
               />
             </svg>
           </div>
-          <h2 className="text-xl md:text-3xl font-bold text-themeNavy mb-2">
-            Inicia Tu Viaje Espiritual
+          <h2 className="text-xl md:text-3xl font-bold text-themeNavy mb-2 font-text">
+            ¡Empieza a crear tu realidad perfecta ahora!
           </h2>
-          <p className="text-themeNavy/80 text-base md:text-xl">
-            Descubre la sabiduría ancestral y conecta con tu verdadero ser
+          <p className="text-themeNavy/80 text-base md:text-lg font-text">
+            Conecta con tu magia creadora, esta es una señal.
           </p>
         </div>
 
@@ -131,7 +137,7 @@ export default function JoinModal({
             <input
               type="text"
               name="name"
-              placeholder="Tu nombre completo"
+              placeholder="Ingresa tu nombre y apellido"
               required
               className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-themeLilac/50 
                        focus:outline-none focus:ring-2 focus:ring-themePink focus:border-transparent
@@ -142,7 +148,7 @@ export default function JoinModal({
             <input
               type="email"
               name="email"
-              placeholder="Tu correo electrónico"
+              placeholder="Ingresa tu correo electrónico"
               required
               className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-themeLilac/50 
                        focus:outline-none focus:ring-2 focus:ring-themePink focus:border-transparent
@@ -152,7 +158,7 @@ export default function JoinModal({
           <div>
             <textarea
               name="message"
-              placeholder="¿Qué te gustaría descubrir en tu camino espiritual?"
+              placeholder="¿Cuál es tu mayor reto espiritual? "
               required
               className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-themeLilac/50 
                        focus:outline-none focus:ring-2 focus:ring-themePink focus:border-transparent
@@ -161,8 +167,8 @@ export default function JoinModal({
           </div>
 
           <div className="bg-themeLilac/80 rounded-lg p-4 space-y-2">
-            <p className="text-sm font-medium text-themeNavy">
-              Al unirte, recibirás:
+            <p className="text-sm font-medium text-themeNavy font-text">
+              Al registrarte...
             </p>
             <ul className="text-sm text-themeNavy/80 space-y-1">
               <li className="flex items-center">
@@ -179,7 +185,7 @@ export default function JoinModal({
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Meditaciones guiadas semanales
+                <p className='font-text'>Estarás en la clase gratuita "3 Pasos para Revelar tu Abundancia Consciente".</p>
               </li>
               <li className="flex items-center">
                 <svg
@@ -195,7 +201,7 @@ export default function JoinModal({
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Acceso a nuestra biblioteca de sabiduría
+                <p className='font-text'>Ingresarás a una comunidad exclusiva con información diaria para elevar tu energía.</p>
               </li>
               <li className="flex items-center">
                 <svg
@@ -211,7 +217,7 @@ export default function JoinModal({
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Conexión con una comunidad de almas afines
+                <p className='font-text'>Desarrollar todo tu potencial creador para sentirte en equilibrio emocional y espiritual.</p>
               </li>
             </ul>
           </div>
@@ -219,7 +225,7 @@ export default function JoinModal({
           <button
             type="submit"
             disabled={isLoading}
-            className={`
+            className={` font-text
               w-full py-3 px-6 rounded-lg
               bg-gradient-to-r from-themePink to-themeLilac
               text-themeNavy font-medium
@@ -230,7 +236,7 @@ export default function JoinModal({
               ${isLoading ? "animate-pulse" : ""}
             `}
           >
-            {isLoading ? "Procesando..." : "Comenzar Mi Viaje Espiritual"}
+            {isLoading ? "Procesando..." : "¡Ya quiero estar en la clase!"}
           </button>
         </form>
       </div>

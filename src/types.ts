@@ -4,7 +4,7 @@ export interface IMenuItem {
 }
 
 export interface IBenefit {
-    title: string;
+    title: {line1: string; line2?: string};
     description: string;
     imageSrc: string;
     bullets: IBenefitBullet[]
@@ -30,7 +30,12 @@ export interface IFAQ {
 export interface ITestimonial {
     name: string;
     role: string;
-    message: string;
+    message: {
+        line1: string;
+        line2?: string;
+        line3?: string;
+        line4?: string;
+    };
     avatar: string;
 }
 

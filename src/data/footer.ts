@@ -7,7 +7,7 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "",
+    subheading: "¡Conecta con tu magia creadora!",
     quickLinks: [
         {
             text: "Características",
@@ -15,7 +15,7 @@ export const footerDetails: {
         },
         {
             text: "WhatsApp",
-            url: "#whatsapp"
+            url: "https://wa.me/message/53SYRQ6PEQEBP1"
         },
         {
             text: "Testimonios",
@@ -23,15 +23,15 @@ export const footerDetails: {
         }
     ],
     email: 'spirituale@gmail.com',
-    telephone: '+58 (414) 4244242',
+    telephone: '+58 412‑4915305',
     socials: {
         // github: 'https://github.com',
         // x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
-        facebook: 'https://facebook.com',
+        // twitter: 'https://twitter.com/Twitter',
+        // facebook: 'https://facebook.com',
         // youtube: 'https://youtube.com',
-        linkedin: 'https://www.linkedin.com',
+        // linkedin: 'https://www.linkedin.com',
         // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
+        instagram: 'https://www.instagram.com/spiritu.alee',
     }
 }

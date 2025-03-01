@@ -1,7 +1,7 @@
 export const heroDetails = {
-    heading: 'Manifiesta, Transforma, Atrae. Despierta tu Poder',
-    subheading1: 'Únete a esta ',
-    subheading2: 'presentación gratuita ',
-    subheading3: ' y descubre cómo activar tu poder interior para atraer abundancia, amor y bienestar. ¡El universo está listo para escucharte! ',
+    heading: '3 Pasos para Revelar tu Abundancia Consciente.',
+    subheading1: 'Aprende ',
+    subheading2: 'herramientas ',
+    subheading3: ' espirituales sencillas para conectar con tu abundancia y materializar tus sueños.',
     centerImageSrc: '/images/hero-mockup.webp',
 }

@@ -45,7 +45,10 @@ const config: Config = {
         lg: '0 2px 4px rgba(0, 0, 0, 0.1)'
       }
     },
-    fontFamily: {}
+    fontFamily: {
+      text: ['CuerpoFont', 'sans-serif'],
+      title: ['TituloFont', 'sans-serif'],
+    },
   },
   plugins: []
 }

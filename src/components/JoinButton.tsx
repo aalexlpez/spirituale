@@ -19,10 +19,10 @@ const JoinButton = () => {
 
                 </div>
                 <div>
-                    <div className="text-base font-medium">
+                    <div className="text-base font-medium font-text">
                         Con solo un click
                     </div>
-                    <div className="-mt-1 font-sans text-2xl font-bold">
+                    <div className="-mt-1 font-sans text-2xl font-bold font-text">
                         ¡Únete Gratis!
                     </div>
                 </div>

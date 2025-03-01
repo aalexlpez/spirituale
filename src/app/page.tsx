@@ -34,6 +34,7 @@ const HomePage: React.FC = () => {
             title="Lo que dicen nuestros clientes"
             description="Escuche a quienes se han asociado con nosotros."
           >
+            
             <Testimonials />
           </Section>
         </div>

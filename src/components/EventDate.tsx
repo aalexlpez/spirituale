@@ -9,7 +9,7 @@ interface SpecialDateProps {
 
 export default function EventDate({
   date = "22.03.25",
-  subtitle = "¡El universo está listo para escucharte!",
+  subtitle = "¡Conecta con tu magia creadora!",
 }: SpecialDateProps) {
   return (
     <div className="relative w-full max-w-2xl mx-auto px-4 py-12 text-center">
@@ -19,14 +19,14 @@ export default function EventDate({
         transition={{ duration: 0.8 }}
         className="relative z-10"
       >
-        <div className="text-[80px] md:text-[160px] font-bold leading-none bg-gradient-to-r from-themeNavy to-themePink bg-clip-text text-transparent">
+        <div className="text-[80px] md:text-[150px] font-bold leading-none bg-gradient-to-r from-themeNavy to-themePink bg-clip-text text-transparent font-text">
           {date}
         </div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="mt-6 text-base md:text-3xl text-themeNavy font-light"
+          className="mt-6 text-base md:text-3xl text-themeNavy font-light font-text"
         >
           {subtitle}
         </motion.div>

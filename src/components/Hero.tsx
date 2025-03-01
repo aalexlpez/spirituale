@@ -29,8 +29,8 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="text-center">
-                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-themeNavy max-w-xl md:max-w-3xl mx-auto">{heroDetails.heading}</h1>
-                <p className="mt-4 max-w-lg mx-auto text-themeNavy font-medium">{heroDetails.subheading1}<span className='text-themeNeon font-bold'>{heroDetails.subheading2}</span>{heroDetails.subheading3}</p>
+                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-themeNavy max-w-xl md:max-w-3xl mx-auto font-text">{heroDetails.heading}</h1>
+                <p className="mt-4 max-w-lg mx-auto text-themeNavy font-medium font-text">{heroDetails.subheading1}<span className='text-themeNeon font-bold' style={{ fontFamily: 'CuerpoFont' }}>{heroDetails.subheading2}</span>{heroDetails.subheading3}</p>
                 <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
                     <JoinButton />
                 </div>

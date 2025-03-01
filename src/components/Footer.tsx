@@ -8,12 +8,12 @@ import { getPlatformIconByName } from '@/utils';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-hero-background text-foreground py-10">
+        <footer className="bg-hero-background text-foreground py-10 border-t border-themeLilac ">
             <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div>
                     <Link href="/" className="flex items-center gap-2">
                         <Image src={"/images/logo.jpg"} alt="Site Logo" width={100} height={100} className="min-w-fit w-8 h-8 md:w-10 md:h-10 rounded-full" />
-                        <h3 className="manrope text-xl font-semibold cursor-pointer">
+                        <h3 className="text-xl font-semibold cursor-pointer font-text">
                             {siteDetails.siteName}
                         </h3>
                     </Link>
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                     </p>
                 </div>
                 <div>
-                    <h4 className="text-lg font-semibold mb-4">Links rápidos</h4>
+                    <h4 className="text-lg font-semibold mb-4 font-text">Links rápidos</h4>
                     <ul className="text-foreground-accent">
                         {footerDetails.quickLinks.map(link => (
                             <li key={link.text} className="mb-2">
@@ -32,11 +32,11 @@ const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <div>
-                    <h4 className="text-lg font-semibold mb-4">Contáctanos</h4>
+                    <h4 className="text-lg font-semibold mb-4 font-text">Contáctanos</h4>
 
-                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
+                    {footerDetails.email && <div className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</div>}
 
-                    {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-foreground-accent hover:text-foreground">Phone: {footerDetails.telephone}</a>}
+                    {footerDetails.telephone && <div className="block text-foreground-accent hover:text-foreground">Phone: {footerDetails.telephone}</div>}
 
                     {footerDetails.socials && (
                         <div className="mt-5 flex items-center gap-5 flex-wrap">
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                     )}
                 </div>
             </div>
-            <div className="mt-8 md:text-center text-foreground-accent px-6">
+            <div className="mt-8 md:text-center text-foreground-accent px-6 font-text">
                 <p>Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.</p>
                 {/* <p className="text-sm mt-2 text-gray-500">Made with &hearts; by <a href="https://nexilaunch.com" target="_blank">Nexi Launch</a></p>
                 <p className="text-sm mt-2 text-gray-500">UI kit by <a href="https://ui8.net/youthmind/products/fintech-finance-mobile-app-ui-kit" target="_blank">Youthmind</a></p> */}
