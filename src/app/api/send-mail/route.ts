@@ -12,11 +12,12 @@ export async function POST(request: Request) {
     const emailTemplate = template(name)
 
     await resend.emails.send({
-      from: '"Team Spirituale" <info@spiritualelife.com>',
+      // from: 'Team Spirituale<onboarding@resend.dev>',
+      from: 'Team Spirituale <info@spiritualelife.com>',
       to: email,
       subject: 'Bienvenido a Tu Viaje Espiritual',
       html: emailTemplate
-    })
+    });
     return NextResponse.json({ message: 'Correo enviado con éxito' })
   } catch (error) {
     console.error('Error enviando correo:', error)
