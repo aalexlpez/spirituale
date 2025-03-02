@@ -12,8 +12,8 @@ export async function POST(request: Request) {
     const emailTemplate = template(name)
 
     await resend.emails.send({
-      from: 'Team Spirituale <onboarding@resend.dev>',
-      // from: 'Spirituale Team <info@spiritualelife.com>',
+      // from: 'Team Spirituale <onboarding@resend.dev>',
+      from: 'Spirituale Team <info@spiritualelife.com>',
       to: email,
       subject: 'Bienvenido a Tu Viaje Espiritual',
       html: emailTemplate
