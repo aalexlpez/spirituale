@@ -18,8 +18,8 @@ export default function AdminPage() {
     const router = useRouter();
 
     const handleLogin = () => {
-        // if (password === 'Spiritualelife2025&') {
-        if (password === '1') {
+        if (password === 'Spiritualelife2025&') {
+        // if (password === '1') {
             setIsAuthenticated(true);
             fetchUsers();
         } else {
