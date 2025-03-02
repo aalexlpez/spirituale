@@ -35,11 +35,10 @@ export default function JoinModal({
     const form = e.currentTarget;
     const name = (form.elements.namedItem("name") as HTMLInputElement).value;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
-      .value;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
 
     try {
-      const response = await fetch("/api/send-mail", {
+      const response = await fetch("/api/save-potential-user", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,6 +55,7 @@ export default function JoinModal({
       setIsOpen(false);
     } catch (error) {
       console.error("Error enviando el formulario:", error);
+      router.push("/");
       alert("Hubo un problema al enviar tu solicitud. Intenta de nuevo.");
     } finally {
       setIsLoading(false);
