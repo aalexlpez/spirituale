@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server'
-import { db } from 'c:/Users/1/Desktop/proyectos/Personal/spirituale/lib/utils/firebaseConfig';
+import { NextRequest, NextResponse } from 'next/server';
+import { db } from '../../../../lib/utils/firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
 
 // const resend = new Resend(process.env.RESEND_API_KEY)

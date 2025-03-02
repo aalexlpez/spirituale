@@ -28,13 +28,12 @@ export default function AdminPage() {
 
     const fetchUsers = async () => {
         try {
-
             const response = await fetch('/api/admin/get-users');
             const data = await response.json();
             setUsers(data);
         } catch (error) {
             router.push('/');
-            console.error('Error fetching users', error);
+            console.error('Error al consultar usuarios', error);
         }
     };
 
