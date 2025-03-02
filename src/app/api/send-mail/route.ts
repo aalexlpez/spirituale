@@ -13,7 +13,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       // from: 'Team Spirituale<onboarding@resend.dev>',
-      from: 'Team Spirituale <info@spiritualelife.com>',
+      from: 'Spirituale Team <info@spiritualelife.com>',
       to: email,
       subject: 'Bienvenido a Tu Viaje Espiritual',
       html: emailTemplate
