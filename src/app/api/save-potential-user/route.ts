@@ -17,7 +17,11 @@ export async function POST(req: NextRequest) {
       fechaInscripcion: new Date(),
     });
 
-    await sendEmail({ name, email, message });
+    try {
+      await sendEmail({ name, email, message });
+    } catch (error) {
+      return NextResponse.json({ error: 'Error enviando correo: ' + error }, { status: 500 });
+    }
 
     return NextResponse.json({ message: 'Usuario guardado exitosamente' }, { status: 200 });
   } catch (error) {
@@ -28,7 +32,8 @@ export async function POST(req: NextRequest) {
 
 const sendEmail = async (json: { name: string; email: string; message: string }) => {
   try {
-    const response = await fetch('/api/send-mail', {
+    const url = new URL('/api/send-mail', process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000');
+    const response = await fetch(url.toString(), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +44,7 @@ const sendEmail = async (json: { name: string; email: string; message: string })
     if (!response.ok) {
       throw new Error('Error en la solicitud');
     }
-  } catch {
-    console.log('Error al enviar correo');
+  } catch (error) {
+    throw new Error(error instanceof Error ? error.message : String(error));
   }
 };

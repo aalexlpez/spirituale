@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     });
     return NextResponse.json({ message: 'Correo enviado con éxito' })
   } catch (error) {
-    console.error('Error enviando correo:', error)
+
     return NextResponse.json(
       { message: 'Error al enviar el correo' },
       { status: 500 }
