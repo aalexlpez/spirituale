@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '../../../../lib/utils/firebaseConfig';
-import { collection, addDoc } from 'firebase/firestore';
+import { CollectionReference, DocumentData } from 'firebase-admin/firestore';
 
 export async function POST(req: NextRequest) {
   const { name, email, message } = await req.json();
@@ -10,7 +10,8 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    await addDoc(collection(db, 'potencialCliente'), {
+    const usersCollection: CollectionReference<DocumentData> = db.collection('potencialCliente');
+    await usersCollection.add({
       nombreCompleto: name,
       correo: email,
       mensajeSpiritual: message,
