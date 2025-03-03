@@ -3,6 +3,7 @@ import { db } from '../../../../../lib/utils/firebaseConfig';
 import { QueryDocumentSnapshot } from 'firebase-admin/firestore';
 
 export async function GET() {
+  console.log('GET /api/admin/get-users called');
   try {
     const usersCollection = db.collection('potencialCliente');
     const usersSnapshot = await usersCollection.get();
