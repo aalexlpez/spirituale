@@ -29,7 +29,7 @@ export default function AdminPage() {
 
     const fetchUsers = async () => {
         try {
-            const response = await fetch('/api/admin/get-users');
+            const response = await fetch('/api/admin/get-users', { cache: 'no-store' });
             const data = await response.json();
             setUsers(data);
         } catch (error) {
