@@ -18,6 +18,9 @@ export async function POST(req: NextRequest) {
       fechaInscripcion: new Date(),
     });
 
+    // Log the final users list
+    console.log('Save user BD', usersCollection);
+
     try {
       await sendEmail({ name, email, message });
     } catch (error) {
