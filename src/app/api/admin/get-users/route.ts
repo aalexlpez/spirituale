@@ -14,7 +14,10 @@ export async function GET() {
     usersSnapshot.docs.forEach((doc) => console.log(doc.id, doc.data()));
     
     const usersList = usersSnapshot.docs.map((doc: QueryDocumentSnapshot) => doc.data());
-    return NextResponse.json(usersList);
+    
+    const response = NextResponse.json(usersList);
+    response.headers.set('Cache-Control', 'no-store');
+    return response;
   } catch (error) {
     console.error('Error fetching users:', error);
     return NextResponse.json({ error: 'Error consultando usuarios' }, { status: 500 });
