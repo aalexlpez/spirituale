@@ -15,6 +15,9 @@ export async function GET() {
     
     const usersList = usersSnapshot.docs.map((doc: QueryDocumentSnapshot) => doc.data());
     
+    // Log the final users list
+    console.log('Final users list:', usersList);
+    
     const response = NextResponse.json(usersList);
     response.headers.set('Cache-Control', 'no-cache, no-store, must-revalidate');
     response.headers.set('Pragma', 'no-cache');
