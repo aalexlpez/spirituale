@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# service account
+spiritualelife-firebase-adminsdk-fbsvc-b5e91b7571.json
