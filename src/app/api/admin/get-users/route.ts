@@ -1,17 +1,17 @@
 import { NextResponse } from 'next/server';
 import { db } from '../../../../../lib/utils/firebaseConfig';
-import { collection, getDocs, QueryDocumentSnapshot } from 'firebase/firestore';
+import { QueryDocumentSnapshot } from 'firebase-admin/firestore';
 
 export async function GET() {
   try {
-    const usersCollection = collection(db, 'potencialCliente');
-    const usersSnapshot = await getDocs(usersCollection);
+    const usersCollection = db.collection('potencialCliente');
+    const usersSnapshot = await usersCollection.get();
     
     // Log the number of documents fetched
     console.log(`Total documents fetched: ${usersSnapshot.size}`);
     
     // Log each document's data
-    usersSnapshot.docs.forEach((doc) => console.log(doc.id, doc.data()));
+    usersSnapshot.docs.forEach((doc: QueryDocumentSnapshot) => console.log(doc.id, doc.data()));
     
     const usersList = usersSnapshot.docs.map((doc: QueryDocumentSnapshot) => doc.data());
     

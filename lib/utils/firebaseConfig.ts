@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
+import { getFirestore } from "firebase-admin/firestore";
+import * as admin from "firebase-admin";
 
 const firebaseConfig = {
   apiKey: process.env.apiKey,
@@ -11,7 +12,10 @@ const firebaseConfig = {
   measurementId: process.env.measurementId,
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+admin.initializeApp({
+  credential: admin.credential.cert(firebaseConfig),
+});
+
+const db = getFirestore();
 
 export { db };
