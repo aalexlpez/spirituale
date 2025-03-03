@@ -1,8 +1,8 @@
 export const siteDetails = {
     siteName: 'Spirituale',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteUrl: 'https://spiritualelife.com',
     metadata: {
-        title: 'Spirituale - Next.js and Tailwind CSS Landing Page Template',
+        title: 'Spirituale',
         description: 'Spirituale empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
     },
     language: 'es-us',

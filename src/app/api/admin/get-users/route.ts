@@ -17,6 +17,8 @@ export async function GET() {
     
     const response = NextResponse.json(usersList);
     response.headers.set('Cache-Control', 'no-store');
+    response.headers.set('Pragma', 'no-cache');
+    response.headers.set('Expires', '0');
     return response;
   } catch (error) {
     console.error('Error fetching users:', error);
