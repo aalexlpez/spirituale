@@ -29,8 +29,7 @@ export default function AdminPage() {
 
     const fetchUsers = async () => {
         try {
-            const url = new URL('/api/admin/get-users', process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000');
-            const response = await fetch(url.toString(), { cache: 'no-store' });
+            const response = await fetch('http://localhost:3000/api/admin/get-users', { cache: 'no-store' });
             const data = await response.json();
             setUsers(data);
         } catch (error) {
