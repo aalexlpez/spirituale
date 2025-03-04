@@ -31,8 +31,8 @@ const HomePage: React.FC = () => {
         <div className="bg-themeLilac ">
           <Section
             id="testimonios"
-            title="Lo que dicen nuestros clientes"
-            description="Escuche a quienes se han asociado con nosotros."
+            title="Comentarios sobre el método de Ale"
+            description="Son testimonios anónimos para preservar la privacidad."
           >
             
             <Testimonials />

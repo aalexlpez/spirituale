@@ -65,7 +65,7 @@ const Testimonials: React.FC = () => {
                         variants={childVariants}
                     >
                         <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
-                            <Image
+                            {/* <Image
                                 src={testimonial.avatar}
                                 alt={`${testimonial.name} avatar`}
                                 width={50}
@@ -75,7 +75,7 @@ const Testimonials: React.FC = () => {
                             <div className="ml-4">
                                 <h3 className="text-lg font-semibold text-secondary text-themeLilac font-title">{testimonial.name}</h3>
                                 <p className="text-[14px] md:text-sm text-foreground-accent text-themeLilac font-text">{testimonial.role}</p>
-                            </div>
+                            </div> */}
                         </div>
                         <div className={`${getFontSizeClass(getFullMessage(testimonial.message))} mt-4 items-center justify-center h-auto text-justify`}>
                             <p className={`text-foreground-accent text-justify lg:text-left text-themeLilac font-text`}>{testimonial.message.line1}</p>
