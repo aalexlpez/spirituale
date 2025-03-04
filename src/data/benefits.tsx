@@ -81,7 +81,7 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "",
-                description: "A conectarte con tu magia creadora!!!!",
+                description: "¡¡¡A conectarte con tu magia creadora!!!!",
                 icon: <>•</>
             }
         ],
