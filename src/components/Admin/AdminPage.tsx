@@ -18,8 +18,8 @@ export default function AdminPage() {
     const router = useRouter();
 
     const handleLogin = () => {
-        // if (password === 'Spiritualelife2025&') {
-            if (password === '') {
+        if (password === 'Spiritualelife2025&') {
+        // if (password === '') {
             setIsAuthenticated(true);
             fetchUsers();
         } else {
@@ -29,8 +29,7 @@ export default function AdminPage() {
 
     const fetchUsers = async () => {
         try {
-            const url = new URL('/api/admin/get-users', process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000');
-            const response = await fetch(url.toString(), { cache: 'no-store' });
+            const response = await fetch('/api/admin/get-users', { cache: 'no-store' });
             const data = await response.json();
             setUsers(data);
         } catch (error) {

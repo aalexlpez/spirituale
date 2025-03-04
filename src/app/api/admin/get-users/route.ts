@@ -35,6 +35,7 @@ export async function GET() {
 }
 
 export async function OPTIONS() {
+  console.log('OPTIONS /api/admin/get-users called');
   const response = NextResponse.json({});
   response.headers.set('Access-Control-Allow-Origin', '*');
   response.headers.set('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
