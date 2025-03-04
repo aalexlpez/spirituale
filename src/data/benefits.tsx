@@ -18,7 +18,7 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "",
-                description: "Quieres conectarte con la abundancia.",
+                description: "Quieres conectar con tu abundancia de manera consciente",
                 icon: <>•</>
             },
             {
