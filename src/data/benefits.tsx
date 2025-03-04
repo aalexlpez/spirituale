@@ -33,7 +33,7 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "",
-                description: "Eres una mujer ocupada pero quieres iniciarte en el reconocimiento de tu abundancia personal.",
+                description: "Eres una mujer ocupada y aun así quieres iniciarte en el reconocimiento de tu abundancia personal.",
                 icon: <>•</>
             },
             {
