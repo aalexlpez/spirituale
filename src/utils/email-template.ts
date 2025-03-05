@@ -836,7 +836,7 @@ export const template = (name: string) => `
                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                           <tr>
                                             <td align="center" valign="top"
-                                              style="padding:0;Margin:0;padding-right:10px"><a target="_blank" href=""
+                                              style="padding:0;Margin:0;padding-right:10px"><a target="_blank" href="https://www.instagram.com/spiritu.alee"
                                                 style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img
                                                   title="Instagram"
                                                   src="https://fuhukcl.stripocdn.email/content/assets/img/social-icons/logo-colored/instagram-logo-colored.png"
@@ -871,42 +871,7 @@ export const template = (name: string) => `
                     </td>
                   </tr>
                 </table>
-                <table cellpadding="0" cellspacing="0" align="center" class="es-footer" role="none"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important;background-color:transparent;background-repeat:repeat;background-position:center top">
-                  <tr>
-                    <td align="center" style="padding:0;Margin:0">
-                      <table bgcolor="#f7fff7" align="center" cellpadding="0" cellspacing="0" class="es-footer-body"
-                        role="none"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#102B3F;width:600px">
-                        <tr>
-                          <td align="left"
-                            style="Margin:0;padding-bottom:40px;padding-right:20px;padding-left:20px;padding-top:40px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="none"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
-                                  <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                    <tr>
-                                      <td align="center" style="padding:0;Margin:0">
-                                        <p
-                                          style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:21px;letter-spacing:0;color:#E2CFEA;font-size:14px">
-                                          If you prefer not to receive these emails, you can&nbsp;<a href=""
-                                            target="_blank"
-                                            style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:14px">unsubscribe</a>.<br>Copyright
-                                          © 2023&nbsp;Company&nbsp;</p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
+                
                 <table cellpadding="0" cellspacing="0" align="center" class="es-content" role="none"
                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important">
                 </table>
