@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: 'Spirituale Team <info@spiritualelife.com>',
       to: email,
-      subject: 'Bienvenido a Tu Viaje Espiritual',
+      subject: '¡Estás a 1 paso de reservar tu lugar! |  3 PASOS PARA REVELAR TU ABUNDANCIA CONSCIENTE',
       html: emailTemplate
     });
     return NextResponse.json({ message: 'Correo enviado con éxito' })
