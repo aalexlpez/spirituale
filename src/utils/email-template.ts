@@ -168,123 +168,116 @@ a[x-apple-data-detectors],
                  </tr>
                </table></td>
              </tr>
+             <tr>
+             
 
+             
+             <td align="left" bgcolor="#D2C7FF" class="es-m-p20" style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px"><!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
+<a href="Instagram.com/spiritu.alee" style="display: block; text-decoration: none; color: inherit;">
+               <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                 <tr>
+                  <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
+                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                     <tr>
+                      <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/pngclipartsolarcalendarsymbolcomputericonsencapsulatedpostscriptcalendariconmiscellan.png" alt="" width="90" class="b_image" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
+                     </tr>
+                   </table></td>
+                 </tr>
+               </table><!--[if mso]></td><td style="width:30px"></td><td style="width:400px" valign="top"><![endif]-->
+               <table cellpadding="0" cellspacing="0" align="right" class="es-right" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                 <tr>
+                  <td align="center" valign="top" style="padding:0;Margin:0;width:400px">
+                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                     <tr>
+                      <td align="left" style="padding:0;Margin:0"><h2 class="b_title" style="Margin:0;font-family:'Barlow Condensed', Arial, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:28px;font-style:normal;font-weight:normal;line-height:33.6px;color:#0d0d55">Conoce los #21DíasSpirituales</h2><p style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px"><br></p><p class="b_description" style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px">Puedes ir moviendo tu energía con alguno de estos 21 hábitos Spirituales.</p></td>
+                     </tr>
+                   </table>
+                  </td>
+                 </tr>
+               </table><!--[if mso]></td></tr></table><![endif]-->
+               </a>
+               </td>
+             </tr>
 
+            <tr>
+              <td align="left" style="padding:0;Margin:0;padding-right:20px;padding-left:20px">
+<a href="https://wa.me/message/53SYRQ6PEQEBP1" style="display: block; text-decoration: none; color: inherit;">
+                  <table cellpadding="0" cellspacing="0" width="100%" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
+                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                        <tr>
+                          <td align="center" height="40" style="padding:0;Margin:0"></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+                  <tr>
+                  <td align="left" bgcolor="#D2C7FF" class="es-m-p20" style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px"><!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
+                  <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                    <tr>
+                      <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
+                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                        <tr>
+                          <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/lineiconforadvicevectorremovebgpreview.png" alt="" width="90" class="b_image img-8587" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                  </table><!--[if mso]></td><td style="width:30px"></td><td style="width:400px" valign="top"><![endif]-->
+                  <table cellpadding="0" cellspacing="0" align="right" class="es-right" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0;Margin:0;width:400px">
+                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                        <tr>
+                          <td align="left" style="padding:0;Margin:0"><h2 class="b_title" style="Margin:0;font-family:'Barlow Condensed', Arial, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:28px;font-style:normal;font-weight:normal;line-height:33.6px;color:#0d0d55">Asesoría Personalizada</h2><p style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px"><br></p><p class="b_description" style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px">Contáctame directamente vía WhatsApp haciendo click aquí si necesitas algo en específico.</p></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                  </table><!--[if mso]></td></tr></table><![endif]-->
+                </a>
+              </td>
+            </tr>
 
-
-<tr>
-  <td align="left" bgcolor="#D2C7FF" class="es-m-p20" style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px">
-    <a href="Instagram.com/spiritu.alee" style="display: block; text-decoration: none; color: inherit;">
-      <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-        <tr>
-          <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
-            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-              <tr>
-                <td align="center" style="padding:0;Margin:0;font-size:0px">
-                  <img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/pngclipartsolarcalendarsymbolcomputericonsencapsulatedpostscriptcalendariconmiscellan.png" alt="" width="90" class="b_image img-7647" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none">
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-      <table cellpadding="0" cellspacing="0" align="right" class="es-right" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
-        <tr>
-          <td align="center" valign="top" style="padding:0;Margin:0;width:400px">
-            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-              <tr>
-                <td align="left" style="padding:0;Margin:0">
-                  <h2 class="b_title" style="Margin:0;font-family:'Barlow Condensed', Arial, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:28px;font-style:normal;font-weight:normal;line-height:33.6px;color:#0d0d55">Aquí te dejo un Regalo Metafísico</h2>
-                  <p style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px"><br></p>
-                  <p class="b_description" style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px">Da click aquí y descubre el ejercicio metafísico más simple pero efectivo, ¡empieza a crear tu realidad perfecta!</p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </a>
-  </td>
-</tr>
-
-
-
-
-
-
-
-<tr>
-  <td align="left" bgcolor="#D2C7FF" class="es-m-p20" style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px">
-    <a href="https://wa.me/message/53SYRQ6PEQEBP1" style="display: block; text-decoration: none; color: inherit;">
-      <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-        <tr>
-          <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
-            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-              <tr>
-                <td align="center" style="padding:0;Margin:0;font-size:0px">
-                  <img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/lineiconforadvicevectorremovebgpreview.png" alt="" width="90" class="b_image img-7647" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none">
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-      <table cellpadding="0" cellspacing="0" align="right" class="es-right" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
-        <tr>
-          <td align="center" valign="top" style="padding:0;Margin:0;width:400px">
-            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-              <tr>
-                <td align="left" style="padding:0;Margin:0">
-                  <h2 class="b_title" style="Margin:0;font-family:'Barlow Condensed', Arial, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:28px;font-style:normal;font-weight:normal;line-height:33.6px;color:#0d0d55">Aquí te dejo un Regalo Metafísico</h2>
-                  <p style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px"><br></p>
-                  <p class="b_description" style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px">Da click aquí y descubre el ejercicio metafísico más simple pero efectivo, ¡empieza a crear tu realidad perfecta!</p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </a>
-  </td>
-</tr>
-
-
-
-
-<tr>
-  <td align="left" bgcolor="#D2C7FF" class="es-m-p20" style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px">
-    <a href="https://www.canva.com/design/DAGgzyxscjI/_OnzqK8Y_AuCTvIy789Y7g/edit?utm_content=DAGgzyxscjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" style="display: block; text-decoration: none; color: inherit;">
-      <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-        <tr>
-          <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
-            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-              <tr>
-                <td align="center" style="padding:0;Margin:0;font-size:0px">
-                  <img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/image_RPv.png" alt="" width="90" class="b_image img-7647" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none">
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-      <table cellpadding="0" cellspacing="0" align="right" class="es-right" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
-        <tr>
-          <td align="center" valign="top" style="padding:0;Margin:0;width:400px">
-            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-              <tr>
-                <td align="left" style="padding:0;Margin:0">
-                  <h2 class="b_title" style="Margin:0;font-family:'Barlow Condensed', Arial, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:28px;font-style:normal;font-weight:normal;line-height:33.6px;color:#0d0d55">Aquí te dejo un Regalo Metafísico</h2>
-                  <p style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px"><br></p>
-                  <p class="b_description" style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px">Da click aquí y descubre el ejercicio metafísico más simple pero efectivo, ¡empieza a crear tu realidad perfecta!</p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </a>
-  </td>
-</tr>
+             <tr>
+              <td align="left" style="padding:0;Margin:0;padding-right:20px;padding-left:20px">
+<a href="https://www.canva.com/design/DAGgzyxscjI/_OnzqK8Y_AuCTvIy789Y7g/edit?utm_content=DAGgzyxscjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" style="display: block; text-decoration: none; color: inherit;">
+               <table cellpadding="0" cellspacing="0" width="100%" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                 <tr>
+                  <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
+                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                     <tr>
+                      <td align="center" height="40" style="padding:0;Margin:0"></td>
+                     </tr>
+                   </table></td>
+                 </tr>
+               </table></td>
+             </tr>
+             <tr>
+              <td align="left" bgcolor="#D2C7FF" class="es-m-p20" style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px"><!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
+               <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                 <tr>
+                  <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
+                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                     <tr>
+                      <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/image_RPv.png" alt="" width="90" class="b_image img-7647" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
+                     </tr>
+                   </table></td>
+                 </tr>
+               </table><!--[if mso]></td><td style="width:30px"></td><td style="width:400px" valign="top"><![endif]-->
+               <table cellpadding="0" cellspacing="0" align="right" class="es-right" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                 <tr>
+                  <td align="center" valign="top" style="padding:0;Margin:0;width:400px">
+                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                     <tr>
+                      <td align="left" style="padding:0;Margin:0"><h2 class="b_title" style="Margin:0;font-family:'Barlow Condensed', Arial, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:28px;font-style:normal;font-weight:normal;line-height:33.6px;color:#0d0d55">Aquí te dejo un Regalo Metafísico</h2><p style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px"><br></p><p class="b_description" style="Margin:0;mso-line-height-rule:exactly;font-family:Barlow, sans-serif;line-height:19.2px;letter-spacing:0;color:#0d0d55;font-size:16px">Da click aquí y descubre el ejercicio metafísico más simple pero efectivo, ¡empieza a crear tu realidad perfecta!</p></td>
+                     </tr>
+                   </table></td>
+                 </tr>
+               </table><!--[if mso]></td></tr></table><![endif]-->
+               </a>
+               </td>
+             </tr>
            </table></td>
          </tr>
        </table>
