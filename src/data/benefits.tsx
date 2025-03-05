@@ -8,6 +8,11 @@ export const benefits: IBenefit[] = [
         bullets: [
             {
                 title: "",
+                description: "Quieres integrar tu sombra, para liberarte de creencias limitantes.",
+                icon: <>•</>
+            },
+            {
+                title: "",
                 description: "Quieres conectar con tu parte divina.",
                 icon: <>•</>
             },
