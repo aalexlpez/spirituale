@@ -239,32 +239,35 @@ a[x-apple-data-detectors],
               </td>
             </tr>
 
-             <tr>
+
+
+
+                        <tr>
               <td align="left" style="padding:0;Margin:0;padding-right:20px;padding-left:20px">
 <a href="https://www.canva.com/design/DAGgzyxscjI/_OnzqK8Y_AuCTvIy789Y7g/edit?utm_content=DAGgzyxscjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" style="display: block; text-decoration: none; color: inherit;">
-               <table cellpadding="0" cellspacing="0" width="100%" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                 <tr>
-                  <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
-                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                     <tr>
-                      <td align="center" height="40" style="padding:0;Margin:0"></td>
-                     </tr>
-                   </table></td>
-                 </tr>
-               </table></td>
-             </tr>
-             <tr>
-              <td align="left" bgcolor="#D2C7FF" class="es-m-p20" style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px"><!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
-               <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-                 <tr>
-                  <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
-                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                     <tr>
+                  <table cellpadding="0" cellspacing="0" width="100%" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
+                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                        <tr>
+                          <td align="center" height="40" style="padding:0;Margin:0"></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+                  <tr>
+                  <td align="left" bgcolor="#D2C7FF" class="es-m-p20" style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px"><!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
+                  <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                    <tr>
+                      <td align="center" valign="top" class="es-m-p20b" style="padding:0;Margin:0;width:90px">
+                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                        <tr>
                       <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="" style="mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:16px"><img src="https://fuhukcl.stripocdn.email/content/guids/CABINET_9f9a523169c17e16ea0a145555496f1be2381bf2ee0544a6a243496224175567/images/image_RPv.png" alt="" width="90" class="b_image img-7647" style="display:block;font-size:16px;border:0;outline:none;text-decoration:none"></a></td>
-                     </tr>
-                   </table></td>
-                 </tr>
-               </table><!--[if mso]></td><td style="width:30px"></td><td style="width:400px" valign="top"><![endif]-->
+                        </tr>
+                      </table></td>
+                    </tr>
+                  </table><!--[if mso]></td><td style="width:30px"></td><td style="width:400px" valign="top"><![endif]-->
                <table cellpadding="0" cellspacing="0" align="right" class="es-right" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
                  <tr>
                   <td align="center" valign="top" style="padding:0;Margin:0;width:400px">
@@ -275,11 +278,20 @@ a[x-apple-data-detectors],
                    </table></td>
                  </tr>
                </table><!--[if mso]></td></tr></table><![endif]-->
-               </a>
-               </td>
-             </tr>
-           </table></td>
-         </tr>
+                </a>
+              </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
        </table>
        <table cellpadding="0" cellspacing="0" align="center" class="es-content" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important">
          <tr>
