@@ -1,5 +1,4 @@
 export const template = (name: string) => `
-
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="es">
@@ -663,10 +662,16 @@ export const template = (name: string) => `
                       </a>
                     </td>
                   </tr>
+
+                  <!-- Espacio entre bloques -->
+                  <tr>
+                    <td style="padding: 20px 0;"></td>
+                  </tr>
+
                   <!-- SEGUNDO -->
                   <tr>
                     <td align="left" bgcolor="#D2C7FF" class="es-m-p20"
-                      style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px;margin-top: 25px;">
+                      style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px">
                       <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
                       <a href="https://wa.me/message/53SYRQ6PEQEBP1"
                         style="display: block; text-decoration: none; color: inherit;">
@@ -717,10 +722,16 @@ export const template = (name: string) => `
                       </a>
                     </td>
                   </tr>
+
+                  <!-- Espacio entre bloques -->
+                  <tr>
+                    <td style="padding: 20px 0;"></td>
+                  </tr>
+                  
                   <!-- TERCERO -->
                   <tr>
                     <td align="left" bgcolor="#D2C7FF" class="es-m-p20"
-                      style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px;margin-top: 25px;">
+                      style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px;">
                       <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
                       <a href="https://www.canva.com/design/DAGgzyxscjI/_OnzqK8Y_AuCTvIy789Y7g/edit?utm_content=DAGgzyxscjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                         style="display: block; text-decoration: none; color: inherit;">
@@ -905,5 +916,4 @@ export const template = (name: string) => `
   </div>
 </body>
 </html>
-
 `
