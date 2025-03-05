@@ -666,7 +666,7 @@ export const template = (name: string) => `
                   <!-- SEGUNDO -->
                   <tr>
                     <td align="left" bgcolor="#D2C7FF" class="es-m-p20"
-                      style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px">
+                      style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px;margin-top: 25px;">
                       <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
                       <a href="https://wa.me/message/53SYRQ6PEQEBP1"
                         style="display: block; text-decoration: none; color: inherit;">
@@ -720,7 +720,7 @@ export const template = (name: string) => `
                   <!-- TERCERO -->
                   <tr>
                     <td align="left" bgcolor="#D2C7FF" class="es-m-p20"
-                      style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px">
+                      style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px;margin-top: 25px;">
                       <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
                       <a href="https://www.canva.com/design/DAGgzyxscjI/_OnzqK8Y_AuCTvIy789Y7g/edit?utm_content=DAGgzyxscjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                         style="display: block; text-decoration: none; color: inherit;">
