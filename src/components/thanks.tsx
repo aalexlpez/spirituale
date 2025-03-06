@@ -145,7 +145,7 @@ const ThanksPage: React.FC = () => {
             {/* CTA Button */}
             <div className="mt-10">
               <Link
-                href="https://wa.me/message/53SYRQ6PEQEBP1"
+                href="https://chat.whatsapp.com/L730CWaUBL1JgRhBqVHpfI"
                 className="inline-flex items-center px-6 py-3 bg-[#FF99DC] text-[#0D0D55] rounded-full font-medium hover:bg-opacity-90 hover:scale-105 transition-transform duration-300 cursor-pointer"
               >
                 ACCEDE AQUÍ A LA COMUNIDAD EN WHATSAPP

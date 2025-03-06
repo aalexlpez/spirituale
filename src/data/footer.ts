@@ -15,7 +15,7 @@ export const footerDetails: {
         },
         {
             text: "WhatsApp",
-            url: "https://wa.me/message/53SYRQ6PEQEBP1"
+            url: "https://chat.whatsapp.com/L730CWaUBL1JgRhBqVHpfI"
         },
         {
             text: "Testimonios",

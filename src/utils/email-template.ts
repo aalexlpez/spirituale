@@ -673,7 +673,7 @@ export const template = (name: string) => `
                     <td align="left" bgcolor="#D2C7FF" class="es-m-p20"
                       style="padding:40px;Margin:0;background-color:#D2C7FF;border-radius:10px">
                       <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0"><tr><td style="width:90px" valign="top"><![endif]-->
-                      <a href="https://wa.me/message/53SYRQ6PEQEBP1"
+                      <a href="https://chat.whatsapp.com/L730CWaUBL1JgRhBqVHpfI"
                         style="display: block; text-decoration: none; color: inherit;">
                         <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none"
                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
