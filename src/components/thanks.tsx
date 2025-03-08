@@ -142,6 +142,7 @@ const ThanksPage: React.FC = () => {
               </div>
             )}
 
+
             {/* CTA Button */}
             <div className="mt-10">
               <Link
