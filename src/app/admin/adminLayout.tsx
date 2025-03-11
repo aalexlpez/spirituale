@@ -5,6 +5,7 @@ import AdminFooter from '@/components/Admin/AdminFooter';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [isMounted, setIsMounted] = useState(false);
+  const [activeTab, setActiveTab] = useState('users');
 
   useEffect(() => {
     setIsMounted(true);
