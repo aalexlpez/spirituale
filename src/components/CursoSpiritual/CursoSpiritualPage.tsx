@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronDown, Heart, Sparkles, Star, Sun, Users } from "lucide-react"
-import { loadFull } from "tsparticles";
 
 export default function CursoSpiritualPage() {
     const [scrollY, setScrollY] = useState(0)
