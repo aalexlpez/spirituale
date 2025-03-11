@@ -261,20 +261,17 @@ export default function CursoSpiritualPage() {
                             {
                                 name: "María González",
                                 image: "/placeholder.svg?height=200&width=200",
-                                quote:
-                                    "Este programa cambió mi vida por completo. Ahora siento una conexión espiritual que nunca había experimentado antes.",
+                                quote: "\"Este programa cambió mi vida por completo. Ahora siento una conexión espiritual que nunca había experimentado antes.\"",
                             },
                             {
                                 name: "Laura Martínez",
                                 image: "/placeholder.svg?height=200&width=200",
-                                quote:
-                                    "Las técnicas de meditación que aprendí me han ayudado a encontrar paz interior incluso en los momentos más difíciles.",
+                                quote: "\"Las técnicas de meditación que aprendí me han ayudado a encontrar paz interior incluso en los momentos más difíciles.\"",
                             },
                             {
                                 name: "Carolina Pérez",
                                 image: "/placeholder.svg?height=200&width=200",
-                                quote:
-                                    "La comunidad es increíble. Me siento apoyada y comprendida en cada paso de mi camino espiritual.",
+                                quote: "\"La comunidad es increíble. Me siento apoyada y comprendida en cada paso de mi camino espiritual.\"",
                             },
                         ].map((testimonial, index) => (
                             <div
@@ -291,7 +288,7 @@ export default function CursoSpiritualPage() {
                                             className="object-cover w-full h-full"
                                         />
                                     </div>
-                                    <p className="text-white/90 italic mb-4">"{testimonial.quote}"</p>
+                                    <p className="text-white/90 italic mb-4">{testimonial.quote}</p>
                                     <p className="font-bold text-themePink">{testimonial.name}</p>
                                 </div>
                             </div>
