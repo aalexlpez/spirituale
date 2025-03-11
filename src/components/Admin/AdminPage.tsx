@@ -2,7 +2,6 @@
 import { ChevronLeft, ChevronRight, Download } from "lucide-react"
 import { useState } from 'react';
 import * as XLSX from 'xlsx';
-import { useRouter } from 'next/navigation'
 
 
 interface User {
@@ -55,7 +54,6 @@ export default function AdminPage() {
     const [password, setPassword] = useState('');
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [activeTab, setActiveTab] = useState('users');
-    const router = useRouter();
 
     const handleLogin = () => {
         // if (password === 'Spiritualelife2025&') {

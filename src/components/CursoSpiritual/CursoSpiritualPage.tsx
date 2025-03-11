@@ -40,27 +40,6 @@ export default function CursoSpiritualPage() {
         transition: "transform 0.1s linear",
     }
 
-    // Nueva sección con parallax mejorada
-    const parallaxStyle5 = {
-        transform: `translateY(${scrollY * -0.05}px)`,
-        transition: "transform 0.1s linear",
-    }
-
-    const parallaxStyle6 = {
-        transform: `translateY(${scrollY * 0.05}px)`,
-        transition: "transform 0.1s linear",
-    }
-
-    const parallaxStyle7 = {
-        transform: `translateX(${scrollY * 0.05}px)`,
-        transition: "transform 0.1s linear",
-    }
-
-    const parallaxStyle8 = {
-        transform: `translateX(-${scrollY * 0.05}px)`,
-        transition: "transform 0.1s linear",
-    }
-
 
     return (
         <section className="relative overflow-hidden">
