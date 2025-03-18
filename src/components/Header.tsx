@@ -23,7 +23,6 @@ const Header: React.FC = () => {
     const pathname = usePathname();
     const isThanksPage = pathname === '/thanks' || '/curso-spiritual';
 
-
     const handleP2PValidation = async () => {
         setShowJoinModal(true)
     }
