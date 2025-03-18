@@ -143,7 +143,7 @@ export default function CursoSpiritualPage() {
                                 <li className="flex items-start">
                                     <span className="text-themePink mr-2">✓</span>
                                     <span className="text-white/80">
-                                        Y como dice Mia Astral: "Una vez consciente, NO PUEDES SER INDIFERENTE".
+                                        {"Y como dice Mia Astral: \"Una vez consciente, NO PUEDES SER INDIFERENTE\"."}
                                     </span>
                                 </li>
                             </ul>
