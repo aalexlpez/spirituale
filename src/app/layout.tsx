@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // import { GoogleAnalytics } from '@next/third-parties/google';
 import { Source_Sans_3, Manrope } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
+import { Suspense } from "react";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -50,8 +51,10 @@ export default function RootLayout({
       >
         <Header />
         <main>
-          {children}
-          <Analytics />
+          <Suspense fallback={<div>Loading...</div>}>
+            {children}
+            <Analytics />
+          </Suspense>
         </main>
         <Footer />
       </body>
