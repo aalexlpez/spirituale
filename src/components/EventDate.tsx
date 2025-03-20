@@ -8,7 +8,7 @@ interface SpecialDateProps {
 }
 
 export default function EventDate({
-  date = "22.03.25",
+  date = "29.03.25",
   subtitle = "¡Conecta con tu magia creadora!",
 }: SpecialDateProps) {
   return (
