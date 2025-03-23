@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronDown, Sparkles, Sun, Heart, Star } from "lucide-react"
-import { motion, Variants } from "framer-motion"
+import { motion } from "framer-motion"
 import VisionBoard from "./VisionBoard"
 
 export const childVariants = {
