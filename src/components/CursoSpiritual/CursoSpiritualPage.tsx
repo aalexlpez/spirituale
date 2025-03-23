@@ -4,7 +4,8 @@ import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronDown, Sparkles, Sun, Heart, Star } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
+import VisionBoard from "./VisionBoard"
 
 export const childVariants = {
     offscreen: {
@@ -57,12 +58,49 @@ export default function CursoSpiritualPage() {
         transition: "transform 0.1s linear",
     }
 
+    const containerVariants: Variants = {
+        offscreen: {
+            opacity: 0,
+            y: 100
+        },
+        onscreen: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: "spring",
+                bounce: 0.2,
+                duration: 0.9,
+                delayChildren: 0.2,
+                staggerChildren: 0.1,
+            }
+        }
+    };
+
+    const childVariants = {
+        offscreen: {
+            opacity: 0,
+            x: -100,
+        },
+        onscreen: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 2,
+            }
+        },
+    };
+
     return (
-        <section className="relative overflow-hidden">
-            {/* Hero Section */}
-            <div
+        <>
+            <motion.div
                 ref={heroRef}
                 className="relative min-h-screen flex flex-col items-center justify-center bg-themeNavy text-white overflow-hidden"
+                variants={childVariants}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true }}
             >
                 <div
                     className="absolute inset-0 opacity-20"
@@ -115,10 +153,16 @@ export default function CursoSpiritualPage() {
                         <ChevronDown className="h-8 w-8 mx-auto text-white/70" />
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Mi Avatar Section */}
-            <div className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24">
+            <motion.div
+                className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24"
+                variants={childVariants}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true }}
+            >
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-themePink to-themeLilac bg-clip-text text-transparent">
@@ -184,11 +228,12 @@ export default function CursoSpiritualPage() {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Qué Haremos Section */}
-            {/* Qué Haremos Section - Improved Design */}
-            <div className="relative bg-themeNavy py-24 overflow-hidden">
+            <div
+                className="relative bg-themeNavy py-24 overflow-hidden"
+            >
                 {/* Background decorative elements */}
                 <div
                     className="absolute top-20 right-20 w-96 h-96 rounded-full bg-themePink opacity-10 blur-3xl"
@@ -215,7 +260,7 @@ export default function CursoSpiritualPage() {
                     </div>
 
                     {/* Journey path - decorative element */}
-                    <div className="hidden lg:block absolute left-1/2 top-[300px] bottom-20 w-1 bg-gradient-to-b from-themePink to-themeLilac opacity-50 transform -translate-x-1/2 z-0"></div>
+                    <div className="block absolute left-1/2 top-[300px] bottom-20 w-1 bg-gradient-to-b from-themePink to-themeLilac opacity-50 transform -translate-x-1/2 z-0"></div>
 
                     <div className="space-y-16">
                         {[
@@ -286,32 +331,36 @@ export default function CursoSpiritualPage() {
                                 <div
                                     className={`lg:w-5/12 ${day.align === "left" ? "lg:ml-auto" : ""} transform hover:scale-105 transition-all duration-500`}
                                 >
-                                    <div className="bg-gradient-to-br from-themePink to-themeLilac backdrop-blur-sm p-8 md:p-10 rounded-2xl hover:bg-themePink/20 transition-all duration-300 border border-white/10 shadow-xl">
-                                        {/* Mobile day number */}
-                                        <div className="lg:hidden flex items-center mb-6">
-                                            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-themeNavy/70 to-themeLilac flex items-center justify-center text-white font-bold text-xl shadow-lg mr-4">
-                                                {index + 1}
+                                    <motion.div
+                                        variants={childVariants}
+                                        initial="offscreen"
+                                        whileInView="onscreen"
+                                        viewport={{ once: true }}
+                                    >
+                                        <div className="bg-gradient-to-br from-themePink to-themeLilac backdrop-blur-sm p-8 md:p-10 rounded-2xl hover:bg-themePink/20 transition-all duration-300 border border-white/10 shadow-xl">
+                                            {/* Mobile day number */}
+                                            <div className="lg:hidden flex items-center mb-6">
+                                                <div className="bg-themeNavy px-4 py-2 rounded-xl text-themePink font-bold">{day.day}</div>
                                             </div>
-                                            <div className="bg-themeNavy px-4 py-2 rounded-xl text-themePink font-bold">{day.day}</div>
-                                        </div>
 
-                                        {/* Desktop day label */}
-                                        <div className="hidden bg-themeNavy/70 px-4 py-2 rounded-xl text-themePink font-bold mb-4 lg:inline-block">
-                                            {day.day}
-                                        </div>
+                                            {/* Desktop day label */}
+                                            <div className="hidden bg-themeNavy/70 px-4 py-2 rounded-xl text-themePink font-bold mb-4 lg:inline-block">
+                                                {day.day}
+                                            </div>
 
-                                        <h3 className="text-2xl md:text-3xl font-bold mb-6 text-themeNavy">{day.title}</h3>
+                                            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-themeNavy">{day.title}</h3>
 
-                                        <div className="flex items-start gap-4">
-                                            {day.icon === "Sparkles" && <Sparkles className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
-                                            {day.icon === "Brain" && <Sun className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
-                                            {day.icon === "Zap" && <Sparkles className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
-                                            {day.icon === "Heart" && <Heart className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
-                                            {day.icon === "Star" && <Star className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
-                                            {day.icon === "Sun" && <Sun className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
-                                            <p className="text-themeNavy/80 text-lg">{day.description}</p>
+                                            <div className="flex items-start gap-4">
+                                                {day.icon === "Sparkles" && <Sparkles className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
+                                                {day.icon === "Brain" && <Sun className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
+                                                {day.icon === "Zap" && <Sparkles className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
+                                                {day.icon === "Heart" && <Heart className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
+                                                {day.icon === "Star" && <Star className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
+                                                {day.icon === "Sun" && <Sun className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
+                                                <p className="text-themeNavy/80 text-lg">{day.description}</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
                             </div>
                         ))}
@@ -329,9 +378,10 @@ export default function CursoSpiritualPage() {
             </div>
 
             {/* Testimonials Section */}
-            <div
+            <motion.div
                 ref={testimonialsRef}
                 className="relative bg-gradient-to-b from-[#13135f] to-themeNavy text-white py-24 overflow-hidden"
+                variants={childVariants}
             >
                 {/* Elementos decorativos con parallax */}
                 <div
@@ -433,10 +483,13 @@ export default function CursoSpiritualPage() {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Programa Único Section */}
-            <div className="bg-gradient-to-b from-[#13135f] to-themeNavy text-white py-24">
+            <motion.div
+                className="bg-gradient-to-b from-[#13135f] to-themeNavy text-white py-24"
+                variants={childVariants}
+            >
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-themePink to-themeLilac bg-clip-text text-transparent">
@@ -476,26 +529,20 @@ export default function CursoSpiritualPage() {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             <div className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24 w-full items-center justify-center">
                 <div className="flex flex-wrap items-center w-full  justify-center px-4 md:px-10 py-10 md:py-0 rounded-3xl min-h-full">
-                    <div className="w-full lg:w-1/2 flex justify-center ">
-                        <Image src="/images/ME_PRESENTO.jpg" alt="title" width="384" height="762" quality={100} className="rounded-xl shadow-2xl" />
-                    </div>
-                    <motion.div className="w-full lg:w-1/2 flex flex-col text-themeNavy justify-center" variants={childVariants}>
-                        <h3 className="lg:max-w-2xl bg-gradient-to-r bg-clip-text from-themePink to-themeLilac text-transparent mb-4 font-title text-4xl lg:text-7xl lg:leading-tight font-bold">
-                            Me presento...
-                        </h3>
-                        <p className="mt-1.5 mx-auto lg:ml-0 leading-normal text-themeLilac">
-                            Hola, mi nombre es Alexandra y me llaman Ale, soy comunicadora social de profesión, con 10 años de experiencia en esa área sobre todo en marketing y marcas personales. Cuando llegó la pandemia, el encierro más el tiempo disponible me llevaron a un espacio de introspección y revisión interna, donde me di cuenta de que mi realidad me incomodaba más de lo que yo pensaba. Sentía que aunque era una profesional, no tenía sensación de logro y, aunque tenía sueños, no lograba hacerlos realidad. Ahí es donde empecé a descubrir las herramientas espirituales que me llevaron al equilibrio mental, al merecimiento y conectar con mi abundancia de manera consciente y a transformarme en consecuencia en una manifestadora efectiva de mi realidad perfecta, ahora mismo estas herramientas no solo me acompañan si no que además me han permitodo ayudar y acompañar a otras personas a conectar con ellas mismas y materializar sus metas más anheladas. Son 5 años de espiritualidad resumidos que hoy están aquí disponibles para ti.
-                        </p>
-                    </motion.div>
+                    <VisionBoard></VisionBoard>
                 </div>
             </div>
 
             {/* Pricing Section */}
-            <div id="payment" className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24">
+            <motion.div
+                id="payment"
+                className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24"
+                variants={childVariants}
+            >
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-themePink to-themeLilac bg-clip-text text-transparent">
@@ -683,10 +730,13 @@ export default function CursoSpiritualPage() {
                         </h3>
                     </div>
                 </div>
-            </div >
+            </motion.div >
 
             {/* FAQ Section */}
-            < div className="bg-gradient-to-b from-[#13135f] to-themeNavy text-white py-24" >
+            <motion.div
+                className="bg-gradient-to-b from-[#13135f] to-themeNavy text-white py-24"
+                variants={childVariants}
+            >
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-themePink to-themeLilac bg-clip-text text-transparent">
@@ -728,10 +778,13 @@ export default function CursoSpiritualPage() {
                         </div>
                     </div>
                 </div>
-            </div >
+            </motion.div >
 
             {/* Final CTA Section */}
-            < div className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24" >
+            <motion.div
+                className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24"
+                variants={childVariants}
+            >
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-themePink to-themeLilac bg-clip-text text-transparent">
                         ¿Lista para transformar tu vida?
@@ -746,8 +799,8 @@ export default function CursoSpiritualPage() {
                         ¡QUIERO EVOLUCIONAR AHORA!
                     </Link>
                 </div>
-            </div >
-        </section >
+            </motion.div >
+        </>
     )
 }
 

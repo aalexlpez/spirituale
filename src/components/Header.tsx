@@ -21,7 +21,8 @@ const Header: React.FC = () => {
     const [showJoinModal, setShowJoinModal] = useState(false)
 
     const pathname = usePathname();
-    const isThanksPage = pathname === '/thanks' || '/curso-spiritual';
+    const colorLogoText = pathname === '/thanks' || pathname === '/curso-spiritual' || pathname === '/thanks-payment';
+    const joinButton = pathname === '/curso-spiritual' || pathname === '/pago';
 
     const handleP2PValidation = async () => {
         setShowJoinModal(true)
@@ -55,13 +56,13 @@ const Header: React.FC = () => {
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2">
                             <Image src={"/images/logo.jpg"} alt="Site Logo" width={100} height={100} className="min-w-fit w-8 h-8 md:w-10 md:h-10 rounded-full" />
-                            <span className={`font-text text-xl font-semibold cursor-pointer ${isThanksPage ? 'text-themeLilac' : 'text-themeNavy'}`}>
+                            <span className={`font-text text-xl font-semibold cursor-pointer ${colorLogoText ? 'text-themeLilac' : 'text-themeNavy'}`}>
                                 {siteDetails.siteName}
                             </span>
                         </Link>
 
                         {/* Desktop Menu */}
-                        {!isThanksPage &&
+                        {!colorLogoText && !joinButton &&
                             <ul className="hidden md:flex space-x-6">
                                 <li>
                                     <motion.div
@@ -102,7 +103,7 @@ const Header: React.FC = () => {
                             </Link>
 
                             {/* Desktop Menu */}
-                            {!isThanksPage &&
+                            {!colorLogoText && !joinButton &&
                                 <ul className="hidden space-x-6">
                                     <li>
                                         <motion.div
@@ -123,7 +124,7 @@ const Header: React.FC = () => {
 
 
                             {/* Mobile Menu Button */}
-                            {!isThanksPage &&
+                            {!colorLogoText &&
                                 <div className="md:hidden flex items-center">
                                     <button
                                         onClick={() => setIsOpen(!isOpen)}
@@ -143,7 +144,7 @@ const Header: React.FC = () => {
                             }
                         </nav>
                         {/* Mobile Menu with Transition */}
-                        {!isThanksPage &&
+                        {!colorLogoText && !joinButton &&
                             <Transition
                                 show={isOpen}
                                 enter="transition ease-out duration-200 transform"
@@ -170,7 +171,7 @@ const Header: React.FC = () => {
                         }
                     </motion.header>
                     {/* Botón flotante para Mobile */}
-                    {!isThanksPage &&
+                    {!colorLogoText && !joinButton &&
                         <motion.div
                             className="md:hidden fixed bottom-5 right-5 z-50"
                             initial={{ y: -1, opacity: 0 }}
