@@ -58,24 +58,6 @@ export default function CursoSpiritualPage() {
         transition: "transform 0.1s linear",
     }
 
-    const containerVariants: Variants = {
-        offscreen: {
-            opacity: 0,
-            y: 100
-        },
-        onscreen: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                type: "spring",
-                bounce: 0.2,
-                duration: 0.9,
-                delayChildren: 0.2,
-                staggerChildren: 0.1,
-            }
-        }
-    };
-
     const childVariants = {
         offscreen: {
             opacity: 0,
