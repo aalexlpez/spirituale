@@ -32,8 +32,9 @@ export default function CursoPayment() {
     setIsSubmitting(true)
 
     try {
-      const url = new URL('/api/send-email-payment', process.env.NEXT_PUBLIC_BASE_URL || 'https://www.spiritualelife.com/');
-      const response = await fetch(url.toString(), {
+      // const url = new URL('/api/send-email-payment', process.env.NEXT_PUBLIC_BASE_URL || 'https://www.spiritualelife.com/');
+      const response = await fetch("/api/send-email-payment", {
+        // const response = await fetch(url.toString(), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
