@@ -152,7 +152,7 @@ export default function CursoSpiritualPage() {
 
                     <Link
                         href="#payment"
-                        className="inline-block px-8 py-4 text-lg font-bold bg-themePink text-white rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
+                        className="inline-block px-8 py-4 text-lg transform animate-scaleInOut border-2 border-themeNavy font-bold bg-themePink text-themeNavy rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 hover:-translate-y-1"
                     >
                         QUIERO SEGUIR EVOLUCIONANDO
                     </Link>
@@ -229,7 +229,7 @@ export default function CursoSpiritualPage() {
                         <h3 className="text-2xl font-bold mb-6 text-white">¿Te gusta lo que lees?</h3>
                         <Link
                             href="#payment"
-                            className="inline-block px-8 py-4 text-lg font-bold bg-themePink text-white rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
+                            className="inline-block px-8 py-4transform animate-scaleInOut border-2 border-themeNavy text-themeNavy text-lg font-bold bg-themePink rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
                         >
                             QUIERO INSCRIBIRME YA
                         </Link>
@@ -376,7 +376,7 @@ export default function CursoSpiritualPage() {
                     <div className="text-center mt-20">
                         <Link
                             href="#payment"
-                            className="inline-block px-8 py-4 text-lg font-bold bg-themePink text-white rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
+                            className="inline-block px-8 py-4 text-lg font-bold bg-themePink animate-scaleInOut border-2 border-themeNavy text-themeNavy rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
                         >
                             ¡QUIERO COMENZAR MI VIAJE!
                         </Link>
@@ -519,7 +519,7 @@ export default function CursoSpiritualPage() {
                     <div className="text-center mt-12">
                         <Link
                             href="#payment"
-                            className="inline-block px-8 py-4 text-lg font-bold bg-themePink text-white rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
+                            className="inline-block px-8 py-4 text-lg font-bold bg-themePink animate-scaleInOut border-2 border-themeNavy text-themeNavy rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
                         >
                             ¡QUIERO EVOLUCIONAR!
                         </Link>
@@ -652,7 +652,7 @@ export default function CursoSpiritualPage() {
                     </p>
                     <Link
                         href="#payment"
-                        className="inline-block px-10 py-5 text-xl font-bold bg-themePink text-white rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
+                        className="inline-block px-10 py-5 text-xl animate-scaleInOut border-2 border-themeNavy text-themeNavy font-bold bg-themePink rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
                     >
                         ¡QUIERO EVOLUCIONAR AHORA!
                     </Link>

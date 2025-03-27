@@ -249,7 +249,7 @@ export default function Paquete() {
                             $59,99 USD
                         </motion.p>
                         <motion.button
-                            className="mt-4 bg-themePink text-themeNavy transform animate-scaleInOut hover:bg-themeNeon font-bold py-3 px-8 rounded-full text-lg transition-all border border-themeNavy"
+                            className="mt-4 bg-themePink text-themeNavy transform animate-scaleInOut border border-themeNavy font-bold  hover:bg-themeNeon py-3 px-8 rounded-full text-lg  "
                             variants={buttonVariant}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
