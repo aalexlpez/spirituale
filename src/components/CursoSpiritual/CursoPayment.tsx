@@ -4,7 +4,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { useSearchParams } from "next/navigation"
 import { useRouter } from 'next/navigation'
-
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function CursoPayment() {
   const [selectedPayment, setSelectedPayment] = useState("pago-movil")
@@ -27,6 +27,7 @@ export default function CursoPayment() {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
+
     e.preventDefault()
     console.log("Formulario enviado")
     setIsSubmitting(true)
@@ -41,11 +42,15 @@ export default function CursoPayment() {
         },
         body: JSON.stringify({
           email: (document.getElementById('email') as HTMLInputElement).value,
+          titularNombre: (document.getElementById('titularNombre') as HTMLSelectElement)?.value || "",
+          titularCorreo: (document.getElementById('titularCorreo') as HTMLSelectElement)?.value && "",
           firstName: (document.getElementById('firstName') as HTMLInputElement).value,
-          idPersonal: (document.getElementById('cedula') as HTMLInputElement).value,
           lastName: (document.getElementById('lastName') as HTMLInputElement).value,
+          telefono: (document.getElementById('telefono') as HTMLInputElement).value,
+          idPersonal: (document.getElementById('cedula') as HTMLInputElement).value,
           address: (document.getElementById('address') as HTMLInputElement).value,
-          state: (document.getElementById('state') as HTMLSelectElement).value,
+          country: (document.getElementById('country') as HTMLSelectElement).value,
+          nota: (document.getElementById('nota') as HTMLSelectElement).value,
           paymentMethod: selectedPayment,
           price: price,
         }),
@@ -274,6 +279,40 @@ export default function CursoPayment() {
 
           <div className="space-y-4">
 
+            {(selectedPayment === "zelle" || selectedPayment === "zinli" || selectedPayment === "binance") &&
+              <div className="space-y-4">
+                <AnimatePresence>
+                  <motion.div
+                    key="pago-movil-field"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <label htmlFor="firstName" className="block text-[#D2C7FF] mb-1">
+                      Titular de la cuenta
+                    </label>
+                    <input
+                      id="titularNombre"
+                      type="text"
+                      required
+                      className="w-full px-4 py-2 rounded-md bg-[#0D0D55]/80 border border-[#D2C7FF]/30 text-white focus:outline-none focus:border-[#FF99DC] focus:ring-1 focus:ring-[#FF99DC] transition-colors"
+                    />
+                    <p className="text-red-500 text-sm font-bold">{`*Nota: coloque nombre completo del titular de la cuenta ${selectedPayment === "zelle" ? "ZELLE" : ""}${selectedPayment === "zinli" ? "ZINLI" : ""}${selectedPayment === "binance" ? "BINANCE" : ""}.`}</p>
+                    <label htmlFor="titular" className="block text-[#D2C7FF] mb-1">
+                      Correo titular
+                    </label>
+                    <input
+                      id="titularCorreo"
+                      type="email"
+                      required
+                      className="w-full px-4 py-2 rounded-md bg-[#0D0D55]/80 border border-[#D2C7FF]/30 text-white focus:outline-none focus:border-[#FF99DC] focus:ring-1 focus:ring-[#FF99DC] transition-colors"
+                    />
+                    <p className="text-red-500 text-sm font-bold">{`*Nota: coloque el correo de la cuenta que emite el pago ${selectedPayment === "zelle" ? "ZELLE" : ""}${selectedPayment === "zinli" ? "ZINLI" : ""}${selectedPayment === "binance" ? "BINANCE" : ""}.`}</p>
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+            }
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="firstName" className="block text-[#D2C7FF] mb-1">
@@ -300,7 +339,24 @@ export default function CursoPayment() {
             </div>
 
             <div>
-              <label htmlFor="address" className="block text-[#D2C7FF] mb-1 ">
+              <label htmlFor="telefono" className="block text-[#D2C7FF] mb-1 ">
+                Número de teléfono:
+              </label>
+              <input
+                id="telefono"
+                type="number"
+                required
+                className="w-full px-4 py-2 rounded-md bg-[#0D0D55]/80 border border-[#D2C7FF]/30 text-white focus:outline-none focus:border-[#FF99DC] focus:ring-1 focus:ring-[#FF99DC] transition-colors"
+                style={{
+                  appearance: 'textfield',
+                  MozAppearance: 'textfield',
+                  WebkitAppearance: 'none'
+                }}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="cedula" className="block text-[#D2C7FF] mb-1 ">
                 Cédula:
               </label>
               <input
@@ -330,40 +386,27 @@ export default function CursoPayment() {
 
             <div className="grid grid-cols-1 gap-4">
               <div>
-                <label htmlFor="state" className="block text-[#D2C7FF] mb-1">
-                  Estado
+                <label htmlFor="country" className="block text-[#D2C7FF] mb-1">
+                  País
                 </label>
-                <select
-                  id="state"
+                <input
+                  id="country"
+                  type="text"
+                  required
                   className="w-full px-4 py-2 rounded-md bg-[#0D0D55]/80 border border-[#D2C7FF]/30 text-white focus:outline-none focus:border-[#FF99DC] focus:ring-1 focus:ring-[#FF99DC] transition-colors"
-                >
-                  <option value="">Selecciona</option>
-                  <option value="amazonas">Amazonas</option>
-                  <option value="anzoategui">Anzoátegui</option>
-                  <option value="apure">Apure</option>
-                  <option value="aragua">Aragua</option>
-                  <option value="barinas">Barinas</option>
-                  <option value="bolivar">Bolívar</option>
-                  <option value="carabobo">Carabobo</option>
-                  <option value="cojedes">Cojedes</option>
-                  <option value="delta-amacuro">Delta Amacuro</option>
-                  <option value="distrito-capital">Distrito Capital</option>
-                  <option value="falcon">Falcón</option>
-                  <option value="guarico">Guárico</option>
-                  <option value="lara">Lara</option>
-                  <option value="merida">Mérida</option>
-                  <option value="miranda">Miranda</option>
-                  <option value="monagas">Monagas</option>
-                  <option value="nueva-esparta">Nueva Esparta</option>
-                  <option value="portuguesa">Portuguesa</option>
-                  <option value="sucre">Sucre</option>
-                  <option value="tachira">Táchira</option>
-                  <option value="trujillo">Trujillo</option>
-                  <option value="vargas">Vargas</option>
-                  <option value="yaracuy">Yaracuy</option>
-                  <option value="zulia">Zulia</option>
-                </select>
+                />
               </div>
+            </div>
+
+            <div>
+              <label htmlFor="nota" className="block text-[#D2C7FF] mb-1">
+                {"Si deseas, coloca aquí información sobre el pago para mayor identificación del mismo (número de referencia, correo, cédula):"}
+              </label>
+              <textarea
+                id="nota"
+                rows={4} // Puedes ajustar el número de filas según sea necesario
+                className="w-full px-4 py-2 rounded-md bg-[#0D0D55]/80 border border-[#D2C7FF]/30 text-white focus:outline-none focus:border-[#FF99DC] focus:ring-1 focus:ring-[#FF99DC] transition-colors"
+              ></textarea>
             </div>
           </div>
         </div>

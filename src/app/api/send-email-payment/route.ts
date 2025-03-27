@@ -4,14 +4,14 @@ import { Resend } from 'resend'
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
-    const { email, firstName, lastName, idPersonal, address, state, paymentMethod, price } = await request.json()
-    console.log(email, firstName, lastName, idPersonal, address, state, paymentMethod, price)
+    const { titularNombre, titularCorreo, nota, email, firstName, lastName, telefono, idPersonal, address, country, paymentMethod, price } = await request.json()
+    console.log(email, titularNombre, titularCorreo, firstName, lastName, idPersonal, address, country, paymentMethod, price)
 
     try {
 
         await resend.emails.send({
             from: 'NOTIFICACION DE PAGO <info@spiritualelife.com>',
-            to: "spiritualetarot@gmail.com",
+            to: "aalexlpez@gmail.com",
             subject: `NOTIFICACIÓN DE PAGO SPIRITUALELIFE DE CLIENTE ${firstName} ${lastName}`,
             html: `
                 <div style="font-family: Arial, sans-serif; line-height: 1.6;">
@@ -20,12 +20,22 @@ export async function POST(request: Request) {
                     <p>Se ha recibido un nuevo pago con los siguientes detalles:</p>
                     <ul>
                         <li><strong>Nombre y apellido:</strong> ${firstName} ${lastName}</li>
-                        <li><strong>Cédula:</strong> ${idPersonal}</li>
                         <li><strong>Correo Electrónico:</strong> ${email}</li>
-                        <li><strong>Estado:</strong> ${state}</li>
+                        <li><strong>Cédula:</strong> ${idPersonal}</li>
+                        ${(paymentMethod === "zelle" || paymentMethod === "zinli" || paymentMethod === "binance") ?
+                            `
+                            <li><strong>Nombre titular de cuenta ${paymentMethod}:</strong> ${titularNombre}</li>
+                            <li><strong>Correo titular de cuenta ${paymentMethod}:</strong> ${titularCorreo}</li>
+                            `
+                            :
+                            ""
+                        }
+                        <li><strong>Número de telefono:</strong> ${telefono}</li>
+                        <li><strong>País:</strong> ${country}</li>
                         <li><strong>Dirección:</strong> ${address}</li>
                         <li><strong>Método de Pago:</strong> ${paymentMethod}</li>
                         <li><strong>Precio:</strong> ${price}</li>
+                        <li><strong>Nota de compra:</strong> ${nota}</li>
                     </ul>
                     <p>Por favor, verifique y procese este pago a la brevedad posible.</p>
                     <p>Gracias,</p>
