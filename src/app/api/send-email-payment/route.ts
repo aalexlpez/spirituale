@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 
         await resend.emails.send({
             from: 'NOTIFICACION DE PAGO <info@spiritualelife.com>',
-            to: "aalexlpez@gmail.com",
+            to: "spiritualetarot@gmail.com",
             subject: `NOTIFICACIÓN DE PAGO SPIRITUALELIFE DE CLIENTE ${firstName} ${lastName}`,
             html: `
                 <div style="font-family: Arial, sans-serif; line-height: 1.6;">
