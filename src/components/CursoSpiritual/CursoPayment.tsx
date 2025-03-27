@@ -122,7 +122,7 @@ export default function CursoPayment() {
 
               <div className={`overflow-hidden transition-max-height duration-500 ease-in-out ${selectedPayment === "pago-movil" ? "max-h-screen" : "max-h-0"}`}>
                 <div className="mt-3 pl-6 text-[#D2C7FF] space-y-1 text-md">
-                  <p>Posees 10 minutos para realizar el pago a esta cuenta:</p>
+                  {/* <p>Posees 10 minutos para realizar el pago a esta cuenta:</p> */}
                   <p>Banco Mercantil / Banco de Venezuela</p>
                   <p>Cédula: 26819943</p>
                   <p>Teléfono: 04142525887</p>

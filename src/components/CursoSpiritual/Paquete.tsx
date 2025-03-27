@@ -201,19 +201,19 @@ export default function Paquete() {
 
                     <motion.div className="space-y-3 mb-10" variants={staggerContainer}>
                         <motion.div className="flex items-start gap-3 text-themeNavy font-semibold" variants={bonusVariant}>
-                            <div className="mt-1 text-orange-500 font-bold">🎁✅</div>
+                            <div className="mt-1 text-orange-500 font-bold">🎁</div>
                             <p>
                                 <span className="font-extrabold">BONO 1:</span> Lectura completa de Cartas
                             </p>
                         </motion.div>
                         <motion.div className="flex items-start gap-3 text-themeNavy font-semibold" variants={bonusVariant}>
-                            <div className="mt-1 text-orange-500 font-bold">🎁✅</div>
+                            <div className="mt-1 text-orange-500 font-bold">🎁</div>
                             <p>
                                 <span className="font-extrabold">BONO 2:</span> Ritual de Limpieza y Abundancia
                             </p>
                         </motion.div>
                         <motion.div className="flex items-start gap-3 text-themeNavy font-semibold" variants={bonusVariant}>
-                            <div className="mt-1 text-orange-500 font-bold">🎁✅</div>
+                            <div className="mt-1 text-orange-500 font-bold">🎁</div>
                             <p>
                                 <span className="font-extrabold">BONO 3:</span> Guía de Abundancia
                             </p>
