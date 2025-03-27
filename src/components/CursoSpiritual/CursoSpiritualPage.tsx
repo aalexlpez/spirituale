@@ -448,7 +448,7 @@ export default function CursoSpiritualPage() {
                             </div>
                         ))}
                     </div>
-                    <div className="mt-16 text-center">
+                    {/* <div className="mt-16 text-center">
                         <div className="aspect-video max-w-3xl mx-auto mb-12 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                             <div className="w-full h-full bg-themeNavy/50 flex items-center justify-center">
                                 <div className="text-center">
@@ -477,7 +477,7 @@ export default function CursoSpiritualPage() {
                         >
                             ESTOY LISTA
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </motion.div>
 
