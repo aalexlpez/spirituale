@@ -618,7 +618,7 @@ export default function CursoSpiritualPage() {
                                 {
                                     question: "¿Qué resultados obtendré de esta formación?",
                                     answer:
-                                        "Los resultados se basan en tu bienestar espiritual y energético. Mo objetivo es que construyas una vida espiritual que te lleve al logro de tus metas de una forma amable y prática.",
+                                        "Los resultados se basan en tu bienestar espiritual y energético. Mi objetivo es que construyas una vida espiritual que te lleve al logro de tus metas de una forma amable y prática.",
                                 },
                                 {
                                     question: "¿Podré hacer preguntas o participar durante los 7 días?",
