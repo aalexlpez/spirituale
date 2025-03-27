@@ -112,6 +112,7 @@ export default function Paquete() {
                 >
                     El programa online para mujeres ocupadas que están comprometidas con su bienestar espiritual y el logro de sus
                     deseos y metas, respondiendo al llamado de{" "}
+                    <br />
                     <span className="font-extrabold text-themePink"> conectar con su magia creadora</span>
                 </motion.p>
             </motion.section>

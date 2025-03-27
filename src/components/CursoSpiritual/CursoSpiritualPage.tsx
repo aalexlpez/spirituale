@@ -140,7 +140,7 @@ export default function CursoSpiritualPage() {
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-themePink to-themeLilac bg-clip-text text-transparent">
                         ¿Estás lista para llegar a un nuevo nivel de Manifestación Consciente?
                     </h1>
-                    <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-white/90">
+                    <p className="text-xl sm:text-2xl md:text-5xl max-w-3xl mx-auto mb-8 text-white/90 font-extrabold">
                         Bienvenida a 7 Días Spirituales
                     </p>
                     <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-white/90">
