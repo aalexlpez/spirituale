@@ -3,9 +3,30 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronDown, Sparkles, Sun, Heart, Star } from "lucide-react"
-import { motion } from "framer-motion"
+import { ChevronDown, Sparkles, Heart, Star } from "lucide-react"
+import { motion, Variants } from "framer-motion"
 import VisionBoard from "./VisionBoard"
+import clsx from "clsx"
+import Paquete from "./Paquete"
+
+const containerVariants: Variants = {
+    offscreen: {
+        opacity: 0,
+        y: 100
+    },
+    onscreen: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            type: "spring",
+            bounce: 0.2,
+            duration: 0.9,
+            delayChildren: 0.2,
+            staggerChildren: 0.1,
+        }
+    }
+};
+
 
 export const childVariants = {
     offscreen: {
@@ -120,8 +141,13 @@ export default function CursoSpiritualPage() {
                         ¿Estás lista para llegar a un nuevo nivel de Manifestación Consciente?
                     </h1>
                     <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-white/90">
-                        Bienvenida a los 7 DÍAS SPIRITUALES. Mantenerte despierta, consciente y conectada te mantendrá en paz,
-                        equilibrio y en un feeling de logro inigualable, ¡tu mejor momento acaba de empezar!
+                        Bienvenida a 7 Días Spirituales
+                    </p>
+                    <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-white/90">
+                        El programa online para mujeres ocupadas que están comprometidas con su bienestar espiritual y el logro de sus deseos  y metas, respondiendo al llamado de <span className="font-extrabold text-themePink">conectar con su magia creadora</span>
+                    </p>
+                    <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-white/90">
+                        ¡Tu mejor momento acaba de empezar!
                     </p>
 
                     <Link
@@ -176,14 +202,13 @@ export default function CursoSpiritualPage() {
                         </div>
                         <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl hover:bg-white/10 transition-all duration-300 border border-white/10">
                             <h3 className="text-xl font-bold mb-3 text-white">
-                                Pero también, conozco tres cosas que también quieres hacer:
+                                Además, conozco tres cosas que también quieres hacer:
                             </h3>
                             <ul className="space-y-3">
                                 <li className="flex items-start">
                                     <span className="text-themePink mr-2">✓</span>
                                     <span className="text-white/80">
-                                        Quieres atreverte a vivir una espiritualidad y a una manifestación consciente de una forma muy
-                                        amable.
+                                        Quieres atreverte a vivir una espiritualidad práctica y sencilla para lograr tu manifestación consciente de forma muy amable
                                     </span>
                                 </li>
                                 <li className="flex items-start">
@@ -206,7 +231,7 @@ export default function CursoSpiritualPage() {
                             href="#payment"
                             className="inline-block px-8 py-4 text-lg font-bold bg-themePink text-white rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1"
                         >
-                            ¡SIGUE EVOLUCIONANDO AQUÍ!
+                            QUIERO INSCRIBIRME YA
                         </Link>
                     </div>
                 </div>
@@ -227,17 +252,16 @@ export default function CursoSpiritualPage() {
                 />
 
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className="text-center mb-20">
+                    <div className="text-center mb-20 gap-4 grid">
                         <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-themePink to-themeLilac bg-clip-text text-transparent">
                             ¿QUÉ HAREMOS?
                         </h2>
                         <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/80">
                             Ahora es que tienes nuevos niveles para evolucionar…
-                            ¡El universo no te olvidó, te está mostrando lo que eres!
-                            Durante 7 días te mostraré que
                         </p>
                         <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/80">
-                            COMO ES ADENTRO, ES AFUERA
+                            ¡El universo no te olvidó, te está mostrando lo que eres! Durante 7 días te mostraré que
+                            <span className="font-extrabold text-themePink"> COMO ES ADENTRO, ES AFUERA</span>
                         </p>
                     </div>
 
@@ -251,7 +275,7 @@ export default function CursoSpiritualPage() {
                                 title: "MIRANDO HACIA DENTRO",
                                 description:
                                     "Hagamos juntas un viaje a nuestro interior donde reconozcamos tus mayores deseos, metas, ambiciones, donde profundicemos en la identificación de tus talentos y cómo tu cerebro trabaja con eso en conjunción a tus creencias, costumbres y prácticas. Utilizaremos meditaciones, preguntas poderosas y técnicas de tarot espiritual.",
-                                icon: "Sparkles",
+                                icon: "Mirror",
                                 align: "right",
                             },
                             {
@@ -291,7 +315,7 @@ export default function CursoSpiritualPage() {
                                 title: "RECONOCIENDO MIS RECURSOS",
                                 description:
                                     "¡La vibración perfecta viene desde el reconocimiento de tu poder! Identificamos tus más poderosas cualidades, conocimientos y recursos para generar el infinito mundo de posibilidades que podemos crear con nuestros super poderes.",
-                                icon: "Sun",
+                                icon: "Tools",
                                 align: "left",
                             },
                             {
@@ -333,12 +357,13 @@ export default function CursoSpiritualPage() {
                                             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-themeNavy">{day.title}</h3>
 
                                             <div className="flex items-start gap-4">
-                                                {day.icon === "Sparkles" && <Sparkles className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
-                                                {day.icon === "Brain" && <Sun className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
+                                                {day.icon === "Mirror" && <Image src={"/images/espejo-magico.png"} width={50} height={50} className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" alt={"espejo-magico"} />}
+                                                {day.icon === "Brain" && <Image src={"/images/salud-mental.png"} width={50} height={50} className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" alt={"espejo-magico"} />}
                                                 {day.icon === "Zap" && <Sparkles className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
                                                 {day.icon === "Heart" && <Heart className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
                                                 {day.icon === "Star" && <Star className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
-                                                {day.icon === "Sun" && <Sun className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
+                                                {day.icon === "Tools" && <Image src={"/images/herramientas.png"} width={50} height={50} className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" alt={"espejo-magico"} />}
+                                                {day.icon === "Sparkles" && <Sparkles className="h-8 w-8 text-themeNavy flex-shrink-0 mt-1" />}
                                                 <p className="text-themeNavy/80 text-lg">{day.description}</p>
                                             </div>
                                         </div>
@@ -396,22 +421,19 @@ export default function CursoSpiritualPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
-                                name: "María González",
-                                image: "/placeholder.svg?height=200&width=200",
+                                name: "Inés, cosmiatra",
                                 quote:
-                                    '"Este programa cambió mi vida por completo. Ahora siento una conexión espiritual que nunca había experimentado antes."',
+                                    '"Cada vez que converso con Ale, Me siento tranquila, liberada me da buena energía."',
                             },
                             {
-                                name: "Laura Martínez",
-                                image: "/placeholder.svg?height=200&width=200",
+                                name: "Mariángela, emprendedora",
                                 quote:
-                                    '"Las técnicas de meditación que aprendí me han ayudado a encontrar paz interior incluso en los momentos más difíciles."',
+                                    '"En este camino me he llevado de tarea actividades interesantes y siempre orientadas en lograr mejorías y cuidar lo que pienso."',
                             },
                             {
-                                name: "Carolina Pérez",
-                                image: "/placeholder.svg?height=200&width=200",
+                                name: "Ester, ingeniero",
                                 quote:
-                                    '"La comunidad es increíble. Me siento apoyada y comprendida en cada paso de mi camino espiritual."',
+                                    '"He aprendido a vivir una espiritualidad sin estrés y sin miedo, me siento plena y conectada."',
                             },
                         ].map((testimonial, index) => (
                             <div
@@ -419,15 +441,7 @@ export default function CursoSpiritualPage() {
                                 className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl hover:bg-white/10 transition-all duration-300 border border-white/10"
                             >
                                 <div className="flex flex-col items-center">
-                                    <div className="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-themePink">
-                                        <Image
-                                            src={testimonial.image || "/placeholder.svg"}
-                                            alt={testimonial.name}
-                                            width={80}
-                                            height={80}
-                                            className="object-cover w-full h-full"
-                                        />
-                                    </div>
+
                                     <p className="text-white/90 italic mb-4">{testimonial.quote}</p>
                                     <p className="font-bold text-themePink">{testimonial.name}</p>
                                 </div>
@@ -514,7 +528,55 @@ export default function CursoSpiritualPage() {
             </motion.div>
 
             <div className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24 w-full items-center justify-center">
-                <div className="flex flex-wrap items-center w-full  justify-center px-4 md:px-10 py-10 md:py-0 rounded-3xl min-h-full">
+
+
+
+
+
+                <motion.div
+                    className={clsx("flex flex-wrap flex-col items-stretch justify-center  lg:flex-row  lg:flex-nowrap py-20  text-themeLilac")}
+                    variants={containerVariants}
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: true }}
+                >
+                    <div
+                        className={clsx("flex flex-wrap items-center w-full lg:max-w-3xl px-4 md:px-10 py-10 md:py-0 rounded-3xl min-h-full lg:order-1 justify-end text-themeLilac")}
+                    >
+                        <div className="w-full text-center lg:text-left ">
+                            <motion.div
+                                className="flex flex-col w-full text-themeNavy justify-center"
+                                variants={childVariants}
+                            >
+                                <div className="mx-auto lg:ml-0 w-full font-text">
+                                    <motion.div className="flex flex-col mb-2 sm:mb-4 last:mb-0 " variants={childVariants}>
+                                        <div className="flex items-start gap-3">
+
+                                            {/* Contenedor del texto */}
+                                            <div className="flex-1">
+                                                <h1 className={clsx("lg:max-w-2xl bg-gradient-to-r bg-clip-text text-transparent mb-4 font-title text-4xl lg:text-7xl lg:leading-tight font-bold from-themeLilac to-themePink")}>
+                                                    {"Me presento..."}
+                                                </h1>
+                                                <p className={clsx("text-base text-white md:text-xl")}>{"Hola, mi nombre es Alexandra y me llaman Ale, soy comunicadora social de profesión, con 10 años de experiencia en esa área sobre todo en marketing y marcas personales. Cuando llegó la pandemia, el encierro más el tiempo disponible me llevaron a un espacio de introspección y revisión interna, donde me di cuenta de que mi realidad me incomodaba más de lo que yo pensaba. Sentía que aunque era una profesional, no tenía sensación de logro y, aunque tenía sueños, no lograba hacerlos realidad. Ahí es donde empecé a descubrir las herramientas espirituales que me llevaron al equilibrio mental, al merecimiento y conectar con mi abundancia de manera consciente y a transformarme en consecuencia en una manifestadora efectiva de mi realidad perfecta, ahora mismo estas herramientas no solo me acompañan si no que además me han permitodo ayudar y acompañar a otras personas a  conectar con ellas mismas y materializar sus metas más anheladas. Son 5 años de espiritualidad resumidos  que hoy están aquí disponibles para ti."}</p>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                </div>
+                            </motion.div>
+                        </div>
+                    </div>
+
+                    <div className={clsx("mt-5 lg:mt-0 lg:order-2")}>
+                        <div className={clsx("w-full flex justify-center lg:justify-end")}>
+                            <Image src={"/images/ME_PRESENTO.jpg"} alt="title" width="384" height="762" quality={100} className="lg:ml-0 rounded-xl shadow-2xl" />
+                        </div>
+                    </div>
+                </motion.div>
+            </div>
+
+
+            <div className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24 w-full items-center justify-start">
+                <div className="flex flex-wrap items-center w-full  justify-center px-4 md:px-10 py-10 md:py-0 lg:px-20 xl:px-36 rounded-3xl min-h-full">
                     <VisionBoard></VisionBoard>
                 </div>
             </div>
@@ -525,193 +587,7 @@ export default function CursoSpiritualPage() {
                 className="bg-gradient-to-b from-themeNavy to-[#13135f] text-white py-24"
                 variants={childVariants}
             >
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-themePink to-themeLilac bg-clip-text text-transparent">
-                            Elige Tu Plan
-                        </h2>
-                        <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/80">
-                            Invierte en tu crecimiento espiritual y transforma tu vida
-                        </p>
-                        <div className="inline-block bg-themePink/20 px-4 py-2 rounded-full text-themePink font-bold mt-4">
-                            BONO DE 48 HORAS - ¡PRECIOS ESPECIALES!
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                        {/* BONO DE 48 HORAS */}
-                        <div className="grid bg-themeLilac rounded-xl p-6 border border-themePink/30 transform hover:scale-105 transition-all duration-300 content-between">
-                            <div>
-                                <h4 className="text-xl font-bold mb-4 text-white p-2 bg-themePink rounded-2xl text-center">BONO DE 48 HORAS</h4>
-                                <ul className="space-y-2 mb-6">
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">7 Días de Spiritualidad Consciente con Acceso de Por Vida</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Guía de Hábitos Abundantes Conscientes</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Ebook: Creo mi Realidad Perfecta con Abundancia Consciente</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Lectura de Cartas Completa</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Ritual Energético</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="text-themeNavy/80">Precio regular:</span>
-                                    <span className="text-themeNavy/80 line-through">$500 USD</span>
-                                </div>
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="text-themeNavy font-bold">Oferta:</span>
-                                    <span className="text-themeNavy  font-bold text-2xl">$150 USD</span>
-                                </div>
-                                <Link
-                                    href="/pago?price=150"
-                                    className="block w-full text-center px-4 py-3 bg-themePink text-white rounded-lg font-bold transition-all"
-                                >
-                                    COMPRAR AHORA
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* PLAN PRO SPIRITUAL */}
-                        <div className="grid bg-themeLilac rounded-xl p-6 border border-themePink/30 transform hover:scale-105 transition-all duration-300 content-between">
-                            <div>
-                                <h4 className="text-xl font-bold mb-4 text-white p-2 bg-themePink rounded-2xl text-center">PLAN PRO SPIRITUAL</h4>
-                                <ul className="space-y-2 mb-6">
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">7 Días de Spiritualidad Consciente</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Guía de Hábitos Abundantes Conscientes</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Ebook: Creo mi Realidad Perfecta con Abundancia Consciente</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="text-themeNavy/80">recio regular:</span>
-                                    <span className="text-themeNavy/80 line-through">$200 USD</span>
-                                </div>
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="text-themeNavy font-bold">Oferta:</span>
-                                    <span className="text-themeNavy  font-bold text-2xl">$80 USD</span>
-                                </div>
-                                <Link
-                                    href="/pago?price=80"
-                                    className="block w-full text-center px-4 py-3 bg-themePink text-white rounded-lg font-bold transition-all"
-                                >
-                                    COMPRAR AHORA
-                                </Link>
-                            </div>
-
-                        </div>
-
-                        {/* SPIRITUALIDAD UNO A UNO */}
-                        <div className="grid bg-themeLilac rounded-xl p-6 border border-themePink/30 transform hover:scale-105 transition-all duration-300 content-between">
-                            <div>
-                                <h4 className="text-xl font-bold mb-4 text-white p-2 bg-themePink rounded-2xl text-center">SPIRITUALIDAD UNO A UNO</h4>
-                                <ul className="space-y-2 mb-6">
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">7 Días de Spiritualidad Consciente con Acceso de Por Vida</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Guía de Hábitos Abundantes Conscientes</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Ebook: Creo mi Realidad Perfecta con Abundancia Consciente</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Lectura de Cartas Completa</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Ritual Energético</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">2 Sesiones de Seguimiento durante 1 Mes</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="text-themeNavy/80">Precio regular:</span>
-                                    <span className="text-themeNavy/80 line-through">$1000 USD</span>
-                                </div>
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="text-themeNavy font-bold">Oferta:</span>
-                                    <span className="text-themeNavy  font-bold text-2xl">$250 USD</span>
-                                </div>
-                                <Link
-                                    href="/pago?price=250"
-                                    className="block w-full text-center px-4 py-3 bg-themePink text-white rounded-lg font-bold transition-all"
-                                >
-                                    COMPRAR AHORA
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* SPIRITUALIDAD BÁSICA */}
-                        <div className="grid bg-themeLilac rounded-xl p-6 border border-themePink/30 transform hover:scale-105 transition-all duration-300 content-between">
-                            <div>
-                                <h4 className="text-xl font-bold mb-4 text-white p-2 bg-themePink rounded-2xl text-center">SPIRITUALIDAD BÁSICA</h4>
-                                <ul className="space-y-2 mb-6">
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">7 Días de Spiritualidad Consciente vigente durante 1 Mes</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-themePink mr-2 font-extrabold">✓</span>
-                                        <span className="text-themeNavy">Lectura de Cartas Completa</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="text-themeNavy/80">Precio regular:</span>
-                                    <span className="text-themeNavy/80 line-through">$150 USD</span>
-                                </div>
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="text-themeNavy font-bold">Oferta:</span>
-                                    <span className="text-themeNavy  font-bold text-2xl">$59.99 USD</span>
-                                </div>
-                                <Link
-                                    href="/pago?price=59.99"
-                                    className="block w-full text-center px-4 py-3 bg-themePink text-white rounded-lg font-bold transition-all"
-                                >
-                                    COMPRAR AHORA
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="text-center mt-8 p-6 bg-white/5 rounded-xl border border-white/10">
-                        <h3 className="text-2xl font-bold mb-4 text-themePink">
-                            La historia de escasez, incomodidad e intranquilidad que te has contado hasta ahora, ¡se acaba en este
-                            momento!
-                        </h3>
-                    </div>
-                </div>
+                <Paquete />
             </motion.div >
 
             {/* FAQ Section */}
