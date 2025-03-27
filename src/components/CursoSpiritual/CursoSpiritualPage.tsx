@@ -608,17 +608,17 @@ export default function CursoSpiritualPage() {
                                 {
                                     question: "¿Debo tener experiencia en religiones o debo pertenecer a una religión?",
                                     answer:
-                                        "No debes pertenecer a una religión ni tener experiencia previa en ninguna religión ni práctica religiosa. Solo debes tener la disposición a evolucionar.",
+                                        "No es necesario que tengas experiencia previa o practiques ninguna religión en particular. Solo debes tener la disposición a evolucionar.",
                                 },
                                 {
                                     question: "Luego de los 7 días, ¿podré manifestar todos mis deseos inmediatamente?",
                                     answer:
-                                        "Tendrás las herramientas y recursos necesarios para construir los hábitos y tareas diarias para construir la realidad que deseas. La intención y acción de tu parte es clave.",
+                                        "Tedrás las herramientas y recursos necesarios para construir los hábitos y tareas diarias para crear la realidad que deseas. La intención, acción y compromiso de tu parte son claves.",
                                 },
                                 {
                                     question: "¿Qué resultados obtendré de esta formación?",
                                     answer:
-                                        "Los resultados se basan en tu bienestar espiritual y energético. Mi objetivo se basa en que construyas una vida espiritual que te lleve al logro de tus metas de una forma amable y práctica.",
+                                        "Los resultados se basan en tu bienestar espiritual y energético. Mo objetivo es que construyas una vida espiritual que te lleve al logro de tus metas de una forma amable y prática.",
                                 },
                                 {
                                     question: "¿Podré hacer preguntas o participar durante los 7 días?",
